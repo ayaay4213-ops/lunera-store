@@ -18,7 +18,7 @@ fetch('site-settings.json').then(r=>r.ok?r.json():null).then(s=>{
  if(s.backgroundColor)document.body.style.backgroundColor=s.backgroundColor;
  if(s.cardColor)root.style.setProperty('--lunera-card',s.cardColor);
  if(s.heroImage){const hero=document.querySelector('.hero img');if(hero)hero.src=s.heroImage;}
- if(s.backgroundImage)document.body.style.backgroundImage='url("'+s.backgroundImage+'")';
+ if(s.backgroundImage)root.style.setProperty('--lunera-background-image','url("'+s.backgroundImage.replace(/"/g,'')+'")');
  if(s.titleColor)document.querySelectorAll('h1,h2,h3,.section-head p').forEach(el=>el.style.color=s.titleColor);
  if(s.buttonColor)document.querySelectorAll('.gold-btn,.add-btn').forEach(el=>el.style.backgroundColor=s.buttonColor);
  if(s.cardColor)document.querySelectorAll('.category,.product-card').forEach(el=>{el.style.backgroundColor=s.cardColor;el.style.color='#f4eee4';});
