@@ -36,3 +36,16 @@ body:before{filter:blur(3px);opacity:.82}
  .category strong{font-size:13px}
  .category small{font-size:10px}
 }
+
+
+/* Category photos: portrait format with a clean light background */
+.category{background:#fff!important;color:#241f18!important}
+.cat-art{height:auto!important;aspect-ratio:3/4!important;background:#fff!important;border-radius:13px!important;overflow:hidden}
+.cat-art img{width:100%!important;height:100%!important;aspect-ratio:3/4!important;object-fit:contain!important;object-position:center!important;background:#fff!important;display:block}
+.category strong{color:#2b251c!important}
+.category small{color:#806b4b!important}
+@media(max-width:760px){
+ .category{min-height:0!important}
+ .cat-art{height:auto!important;aspect-ratio:3/4!important}
+ .cat-art img{height:100%!important}
+}
