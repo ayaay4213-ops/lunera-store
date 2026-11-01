@@ -5,3 +5,6 @@
 
 .promise-cta{display:inline-flex;align-items:center;justify-content:center;padding:5px 13px;border-radius:22px;background:linear-gradient(120deg,#f2dfb8,#c49a54);border:1px solid #f4dfb5;color:#211b12!important;text-decoration:none;font-weight:800;font-size:11px;line-height:1.4;box-shadow:0 2px 10px #0005;white-space:nowrap}
 .promise-cta:active{transform:scale(.97)}
+
+/* LUNÉRA settings editor: customizable background image */
+body:before{background-image:var(--lunera-background-image,url('background.jpg.png'));}
