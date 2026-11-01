@@ -4,4 +4,24 @@ function preview(){const p=$('preview');p.style.background=$('backgroundColor').
 $('previewBtn').onclick=preview;
 $('exportBtn').onclick=()=>{const data={buttonColor:$('buttonColor').value,titleColor:$('titleColor').value,backgroundColor:$('backgroundColor').value,cardColor:$('cardColor').value,heroImage:$('heroImage').value.trim(),backgroundImage:$('backgroundImage').value.trim()};const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));a.download='site-settings.json';a.click();URL.revokeObjectURL(a.href)};
 $('resetBtn').onclick=()=>{[['buttonColor','#b8914e'],['titleColor','#211f1b'],['backgroundColor','#f4eee4'],['cardColor','#211f1b']].forEach(([id,v])=>$(id).value=v);$('heroImage').value='';$('backgroundImage').value='';preview()};preview();
+
+// إظهار معاينة الصور والألوان على مساحة المعاينة
+const originalPreview=preview;
+preview=function(){
+ originalPreview();
+ const p=$('preview');
+ const heroPath=$('heroImage').value.trim();
+ const bgPath=$('backgroundImage').value.trim();
+ p.style.backgroundImage=bgPath?'url("'+bgPath+'")':'none';
+ p.style.backgroundSize='cover';
+ p.style.backgroundPosition='center';
+ p.style.borderColor=$('buttonColor').value;
+ p.querySelector('div').style.color=$('buttonColor').value;
+ let img=p.querySelector('.hero-preview');
+ if(heroPath){
+  if(!img){img=document.createElement('img');img.className='hero-preview';img.style.cssText='display:block;width:100%;max-height:170px;object-fit:contain;margin:10px auto;border-radius:10px';p.insertBefore(img,p.querySelector('h2'));}
+  img.src=heroPath;
+ }else if(img){img.remove();}
+}
+['buttonColor','titleColor','backgroundColor','cardColor','heroImage','backgroundImage'].forEach(id=>$(id).addEventListener('input',preview));
 </script></body></html>
