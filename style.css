@@ -14,3 +14,25 @@ body:before{filter:blur(3px);opacity:.82}
 .hero-shade{background:transparent!important}
 .hero-copy{text-shadow:none!important;backdrop-filter:none!important;box-shadow:none!important}
 .hero-copy h1,.hero-copy p,.hero-copy .eyebrow{text-shadow:none!important}
+
+
+/* LUNÉRA premium storefront refinement */
+#categories .section-head{align-items:center;gap:18px}
+#categories .section-head h2{color:#fff;font-size:clamp(25px,3vw,34px);letter-spacing:.1px}
+#categories .section-head p{color:#fff;font-size:14px;margin:0;opacity:.92}
+.category-grid{gap:22px}
+.category{padding:12px 12px 16px;border:1px solid rgba(218,190,139,.58);border-radius:19px;background:linear-gradient(155deg,rgba(42,38,31,.98),rgba(19,18,16,.98));box-shadow:0 12px 28px rgba(0,0,0,.18);min-height:255px}
+.cat-art{height:195px;border-radius:13px;margin-bottom:14px;background:#d9c9ad}
+.category strong{font-size:15px;color:#f7edda}
+.category small{font-size:11px;color:#d9c8a8;margin-top:5px}
+.category:hover{border-color:#e5c98e;box-shadow:0 16px 32px rgba(0,0,0,.27)}
+@media(max-width:760px){
+ #categories .section-head{align-items:flex-start;flex-direction:column;gap:3px}
+ #categories .section-head h2{font-size:23px}
+ #categories .section-head p{font-size:12px}
+ .category-grid{gap:13px}
+ .category{padding:9px 9px 13px;min-height:218px}
+ .cat-art{height:155px;margin-bottom:10px}
+ .category strong{font-size:13px}
+ .category small{font-size:10px}
+}
