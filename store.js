@@ -9,3 +9,17 @@ function renderCart(){const count=cart.reduce((a,x)=>a+x.qty,0),total=cart.reduc
 $('#openCart').onclick=()=>$('#cartOverlay').classList.add('show');$('#closeCart').onclick=()=>$('#cartOverlay').classList.remove('show');$('#cartOverlay').onclick=e=>{if(e.target.id==='cartOverlay')e.currentTarget.classList.remove('show')};$('#filterCategory').onchange=renderProducts;document.querySelectorAll('[data-category]').forEach(b=>b.onclick=()=>{$('#filterCategory').value=b.dataset.category;renderProducts();$('#products').scrollIntoView({behavior:'smooth'})});
 function waNumber(){return DEFAULT_WA}function setWaLink(){const n=waNumber().replace(/\D/g,'');if(n)$('#contactWhatsApp').href='https://wa.me/'+n;else $('#contactWhatsApp').href='#contact';}fetch('store-config.json').then(r=>r.ok?r.json():{}).then(c=>{DEFAULT_WA=c.whatsapp||'';setWaLink()}).catch(setWaLink);
 $('#checkoutForm').onsubmit=e=>{e.preventDefault();if(!cart.length){alert('أضيفي منتجًا إلى الحقيبة أولاً');return}const n=waNumber().replace(/\D/g,'');if(!n){alert('رقم واتساب للمتجر غير مضبوط بعد. أضيفيه من لوحة الإدارة.');return}const lines=cart.map(x=>`- ${x.name} × ${x.qty} = ${money(x.price*x.qty)}`).join('\n');const total=cart.reduce((a,x)=>a+Number(x.price)*x.qty,0);const msg=`طلب جديد من متجر LUNÉRA\n${lines}\nالمجموع: ${money(total)}\nالاسم: ${$('#customerName').value}\nالهاتف: ${$('#customerPhone').value}\nالولاية: ${$('#customerWilaya').value}\nالعنوان: ${$('#customerAddress').value}`;location.href='https://wa.me/'+n+'?text='+encodeURIComponent(msg)};
+
+fetch('site-settings.json').then(r=>r.ok?r.json():null).then(s=>{
+ if(!s)return;
+ const root=document.documentElement;
+ if(s.buttonColor)root.style.setProperty('--lunera-button',s.buttonColor);
+ if(s.titleColor)root.style.setProperty('--lunera-title',s.titleColor);
+ if(s.backgroundColor)document.body.style.backgroundColor=s.backgroundColor;
+ if(s.cardColor)root.style.setProperty('--lunera-card',s.cardColor);
+ if(s.heroImage){const hero=document.querySelector('.hero img');if(hero)hero.src=s.heroImage;}
+ if(s.backgroundImage)document.body.style.backgroundImage='url("'+s.backgroundImage+'")';
+ if(s.titleColor)document.querySelectorAll('h1,h2,h3,.section-head p').forEach(el=>el.style.color=s.titleColor);
+ if(s.buttonColor)document.querySelectorAll('.gold-btn,.add-btn').forEach(el=>el.style.backgroundColor=s.buttonColor);
+ if(s.cardColor)document.querySelectorAll('.category,.product-card').forEach(el=>{el.style.backgroundColor=s.cardColor;el.style.color='#f4eee4';});
+}).catch(()=>{});
