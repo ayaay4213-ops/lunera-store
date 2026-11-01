@@ -8,3 +8,9 @@
 
 /* LUNÉRA settings editor: customizable background image */
 body:before{background-image:var(--lunera-background-image,url('background.jpg.png'));}
+
+/* Visual clarity: keep the storefront crisp, soften only the page background */
+body:before{filter:blur(3px);opacity:.82}
+.hero-shade{background:transparent!important}
+.hero-copy{text-shadow:none!important;backdrop-filter:none!important;box-shadow:none!important}
+.hero-copy h1,.hero-copy p,.hero-copy .eyebrow{text-shadow:none!important}
