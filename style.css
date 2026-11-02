@@ -62,3 +62,20 @@ body:before{filter:blur(3px);opacity:.82}
  .cat-art{height:auto!important;aspect-ratio:3/4!important}
  .cat-art img{height:100%!important}
 }
+
+
+/* LUNÉRA made-to-order feature */
+.preorder-feature{position:relative;overflow:hidden;width:min(1180px,94%);margin:34px auto 12px;padding:34px 26px 28px;text-align:center;border:1px solid rgba(196,157,91,.7);border-radius:24px;background:radial-gradient(ellipse at 50% 0%,rgba(201,169,111,.18),transparent 58%),linear-gradient(135deg,rgba(35,32,26,.98),rgba(17,16,14,.98));box-shadow:0 18px 42px rgba(0,0,0,.2);color:#f7edda}
+.preorder-topline{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px}
+.preorder-brand{font:700 19px 'Playfair Display',serif;letter-spacing:2px;color:#e6d0a4}
+.preorder-divider{color:#b8914e}
+.temu-wordmark{font:800 21px Arial,sans-serif;color:#ff7b24;letter-spacing:-1px}
+.preorder-kicker{display:block;color:#d6bd91;font-size:11px;letter-spacing:.5px}
+.preorder-feature h2{font-size:clamp(23px,3vw,34px);margin:8px 0;color:#fff4df}
+.preorder-feature h2 em{font-style:normal;color:#e3c58e}
+.preorder-feature>p{margin:0 auto 18px;max-width:650px;color:#e8dfcf;font-size:14px;line-height:1.9}
+.preorder-steps{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin:0 auto 17px}
+.preorder-steps span{padding:7px 14px;border:1px solid rgba(216,187,133,.38);border-radius:30px;background:rgba(255,255,255,.055);font-size:11px;color:#f1dfbd}
+.preorder-feature>small{display:block;max-width:760px;margin:auto;color:#c9bda8;font-size:10px;line-height:1.8}
+.product-order-note{display:inline-block;margin:0 0 8px;padding:3px 9px;border-radius:20px;background:#f5ead6;color:#80602e;font-size:10px;font-weight:700}
+@media(max-width:760px){.preorder-feature{width:94%;margin:22px auto 5px;padding:25px 15px 21px;border-radius:18px}.preorder-feature>p{font-size:12px}.preorder-steps{gap:6px}.preorder-steps span{font-size:10px;padding:6px 10px}.preorder-feature>small{font-size:9px}}
