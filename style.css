@@ -79,3 +79,12 @@ body:before{filter:blur(3px);opacity:.82}
 .preorder-feature>small{display:block;max-width:760px;margin:auto;color:#c9bda8;font-size:10px;line-height:1.8}
 .product-order-note{display:inline-block;margin:0 0 8px;padding:3px 9px;border-radius:20px;background:#f5ead6;color:#80602e;font-size:10px;font-weight:700}
 @media(max-width:760px){.preorder-feature{width:94%;margin:22px auto 5px;padding:25px 15px 21px;border-radius:18px}.preorder-feature>p{font-size:12px}.preorder-steps{gap:6px}.preorder-steps span{font-size:10px;padding:6px 10px}.preorder-feature>small{font-size:9px}}
+
+
+/* Per-product options and active cart quantity controls */
+.variant-label{display:block;margin:8px 0;color:#d9c8a8;font-size:11px}
+.variant-select{display:block;width:100%;margin-top:4px;padding:9px 10px;border:1px solid #c5a66d;border-radius:9px;background:#fffaf1;color:#29231a;font:inherit;font-size:12px}
+.cart-line{align-items:flex-start}
+.cart-options{display:block;color:#8a7655;font-size:11px;margin:3px 0 7px}
+.cart-qty{display:flex;align-items:center;gap:10px;margin-top:6px}
+.cart-qty button{width:26px;height:26px;border:1px solid #c9b17e;border-radius:50%;background:#f4ead7;color:#2c2418;font-size:16px;line-height:1}
