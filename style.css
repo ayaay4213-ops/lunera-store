@@ -129,3 +129,38 @@ body:before{filter:blur(3px);opacity:.82}
 .empty-state{color:#fff!important}
 .category strong{color:#fff!important}
 .category small{color:#f0dfc1!important}
+
+
+/* Wider storefront canvas and compact horizontal preorder banner */
+.section{width:100%!important;max-width:1900px!important;padding-left:clamp(14px,3.2vw,54px)!important;padding-right:clamp(14px,3.2vw,54px)!important}
+.category-grid,.product-grid{gap:clamp(10px,1.6vw,22px)!important}
+.preorder-feature{
+ width:min(94%,1050px)!important;
+ max-width:1050px!important;
+ margin:18px auto 14px!important;
+ padding:15px 24px 14px!important;
+ border-radius:17px!important;
+ background:linear-gradient(110deg,#30243a 0%,#49334c 48%,#2b2638 100%)!important;
+ border:1px solid #c5a66d!important;
+ box-shadow:0 8px 22px rgba(24,15,30,.18)!important;
+ text-align:center!important;
+}
+.preorder-topline{display:flex!important;justify-content:center!important;align-items:center!important;gap:10px!important;margin:0 0 4px!important}
+.preorder-brand,.temu-wordmark{font-size:15px!important;color:#fff!important}
+.preorder-kicker{display:block!important;color:#f0dfc1!important;font-size:10px!important;margin:2px 0 3px!important}
+.preorder-feature h2{font-size:19px!important;line-height:1.35!important;margin:3px 0!important;color:#fff!important}
+.preorder-feature h2 em{color:#f1d49b!important}
+.preorder-feature>p{font-size:11px!important;line-height:1.6!important;color:#fff!important;margin:4px 0 9px!important}
+.preorder-steps{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:9px!important;max-width:720px!important;margin:0 auto 8px!important}
+.preorder-steps span{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;font-size:11px!important;font-weight:700!important;padding:7px 10px!important;color:#fff!important;border:1px solid rgba(239,218,180,.55)!important;border-radius:10px!important;background:rgba(255,255,255,.07)!important;white-space:nowrap!important}
+.preorder-steps span b{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 25px!important;width:25px!important;height:25px!important;border-radius:50%!important;background:#f0d49e!important;color:#30243a!important;font-size:15px!important;font-weight:900!important;line-height:1!important}
+.preorder-feature>small{display:block!important;max-width:850px!important;margin:0 auto!important;font-size:9px!important;line-height:1.55!important;color:#f5eee5!important}
+@media(max-width:600px){
+ .section{padding-left:12px!important;padding-right:12px!important}
+ .preorder-feature{width:96%!important;padding:13px 10px!important;margin:13px auto!important}
+ .preorder-feature h2{font-size:17px!important}
+ .preorder-feature>p{font-size:10px!important}
+ .preorder-steps{gap:5px!important}
+ .preorder-steps span{white-space:normal!important;flex-direction:column!important;gap:4px!important;font-size:9px!important;padding:6px 3px!important;text-align:center!important}
+ .preorder-steps span b{width:27px!important;height:27px!important;flex-basis:27px!important;font-size:16px!important}
+}
