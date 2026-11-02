@@ -7,7 +7,7 @@ let products=[],editing=-1;const $=id=>document.getElementById(id);
 let selectedProductImage=null;
 $('imageFile').addEventListener('change',e=>{
  const f=e.target.files[0];if(!f)return;
- if(!/^image\\/(jpeg|png|webp)$/.test(f.type)){alert('اختاري صورة JPG أو PNG أو WebP.');e.target.value='';return;}
+ if(!/^image\/(jpeg|png|webp)$/.test(f.type)){alert('اختاري صورة JPG أو PNG أو WebP.');e.target.value='';return;}
  if(f.size>8*1024*1024){alert('حجم الصورة يجب ألا يتجاوز 8 ميغابايت.');e.target.value='';return;}
  selectedProductImage=f;
  if(!$('image').value.trim())$('image').value='images/'+f.name;
