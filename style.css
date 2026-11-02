@@ -88,3 +88,44 @@ body:before{filter:blur(3px);opacity:.82}
 .cart-options{display:block;color:#8a7655;font-size:11px;margin:3px 0 7px}
 .cart-qty{display:flex;align-items:center;gap:10px;margin-top:6px}
 .cart-qty button{width:26px;height:26px;border:1px solid #c9b17e;border-radius:50%;background:#f4ead7;color:#2c2418;font-size:16px;line-height:1}
+
+
+/* Compact vertical Temu order panel */
+.preorder-feature{
+ width:min(390px,88%)!important;
+ margin:22px auto 12px!important;
+ padding:22px 20px 19px!important;
+ border-radius:22px!important;
+ background:radial-gradient(ellipse at 50% 0%,rgba(211,174,111,.2),transparent 62%),linear-gradient(155deg,#302a20,#171512)!important;
+ border:1px solid #b99559!important;
+ box-shadow:0 12px 30px rgba(0,0,0,.22)!important;
+}
+.preorder-topline{gap:9px!important;margin-bottom:8px!important}
+.preorder-brand{font-size:16px!important}
+.temu-wordmark{font-size:17px!important}
+.preorder-kicker{color:#e7d4b0!important;font-size:10px!important}
+.preorder-feature h2{font-size:22px!important;color:#fff!important;line-height:1.55!important}
+.preorder-feature h2 em{color:#e8c98e!important}
+.preorder-feature>p{font-size:12px!important;line-height:1.8!important;color:#fff!important;margin-bottom:13px!important}
+.preorder-steps{display:grid!important;grid-template-columns:1fr;gap:6px!important;max-width:235px!important;margin-bottom:12px!important}
+.preorder-steps span{font-size:10px!important;padding:6px 10px!important;color:#fff!important;border-color:rgba(226,198,147,.48)!important}
+.preorder-feature>small{font-size:9px!important;line-height:1.8!important;color:#eee4d4!important}
+@media(max-width:760px){.preorder-feature{width:min(350px,88%)!important;padding:19px 16px 16px!important;margin:17px auto 8px!important}.preorder-feature h2{font-size:20px!important}}
+
+/* Product collections open only after a category is selected */
+#products[hidden],#categories[hidden]{display:none!important}
+.products-section{min-height:55vh}
+.collection-heading{display:flex;flex-direction:column;align-items:center;gap:7px;width:100%}
+.collection-heading h2{margin:0;color:#fff!important;font-size:25px}
+.back-categories{border:1px solid #c5a66d;border-radius:22px;padding:7px 15px;background:rgba(255,255,255,.08);color:#fff;font:inherit;font-size:11px}
+.products-section .section-head{display:flex!important;flex-direction:column;align-items:center;gap:14px}
+.products-section .section-head>div{display:flex!important}
+.products-section .section-head select{position:static!important;max-width:220px}
+.product-info h3,.product-info p,.product-info .price{color:#fff!important}
+.product-info p{opacity:.9}
+.product-card{background:linear-gradient(150deg,#302a20,#171512)!important;border:1px solid rgba(201,169,111,.55)!important;color:#fff!important}
+.product-order-note{background:#ead8b6!important;color:#342817!important}
+.variant-label{color:#fff!important}
+.empty-state{color:#fff!important}
+.category strong{color:#fff!important}
+.category small{color:#f0dfc1!important}
