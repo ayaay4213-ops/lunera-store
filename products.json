@@ -238,5 +238,86 @@
     "description": "لأن كل امرأة تستحق أن تشعر بالتميّز. 💛",
     "image": "beauty/beauty22 .jpg.png",
     "variants": []
+  },
+  {
+    "id": "lunera-accessories-01",
+    "name": "إكسسوار أنيق 1",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "اختاري قطعة تضيف إلى إطلالتكِ لمسة أنيقة وخاصة. ✨",
+    "image": "accessories/accessories1.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-02",
+    "name": "إكسسوار أنيق 2",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "تفاصيل جميلة تكمّل أناقتكِ في كل يوم. 🤍",
+    "image": "accessories/accessories2.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-03",
+    "name": "إكسسوار أنيق 3",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "أضيفي لمسة ناعمة تعبّر عن ذوقكِ. 🌷",
+    "image": "accessories/accessories3.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-04",
+    "name": "إكسسوار أنيق 4",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "أناقة بسيطة تجعل إطلالتكِ أكثر تميزًا. ✨",
+    "image": "accessories/accessories4.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-05",
+    "name": "إكسسوار أنيق 5",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "قطعة لطيفة لتكملي بها أسلوبكِ الخاص. 💛",
+    "image": "accessories/accessories5.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-06",
+    "name": "إكسسوار أنيق 6",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "لأن التفاصيل الصغيرة تصنع فرقًا جميلًا. ♡",
+    "image": "accessories/accessories6.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-07",
+    "name": "إكسسوار أنيق 7",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "جدّدي إطلالتكِ بلمسة من الأناقة والنعومة. 🌸",
+    "image": "accessories/accessories7.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-08",
+    "name": "إكسسوار أنيق 8",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "اختيار أنيق يرافقكِ ويبرز ذوقكِ الجميل. ✨",
+    "image": "accessories/accessories8.jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-accessories-09",
+    "name": "إكسسوار أنيق 9",
+    "category": "الإكسسوارات",
+    "price": null,
+    "description": "دلّلي إطلالتكِ بتفصيلة تستحقينها. 🤍",
+    "image": "accessories/accessories9.jpg.png",
+    "variants": []
   }
 ]
