@@ -212,3 +212,45 @@ main{width:100%;max-width:none!important}
  .product-card .variant-select{font-size:9px!important;padding:5px!important}
  .product-card .add-btn{font-size:9px!important;padding:6px 8px!important}
 }
+
+
+/* LUNÉRA royal blue refinement — isolated preview branch */
+:root{
+ --wine:#071a3d;--wine2:#102b59;--pink:#dce9fb;--pale:#eaf2ff;
+ --gold:#c6a15b;--gold2:#f0d9a5;--cream:#f4f7fc;--ink:#10213e;
+}
+.topbar{background:rgba(5,20,49,.97)!important;border-bottom-color:#c6a15b!important}
+.brand,.crown{color:#f0d9a5!important}
+nav a{color:#edf4ff!important}
+.cart-btn{background:linear-gradient(120deg,#e8f1ff,#bcd4f5)!important;color:#10264b!important;border-color:#c6a15b!important}
+.promise{background:linear-gradient(100deg,#071a3d,#12366d,#071a3d)!important;color:#f4e5c2!important;border-bottom-color:#c6a15b!important}
+#categories .section-head h2{color:#f3dfb4!important}
+#categories .section-head p{color:#e7efff!important}
+.category{
+ background:linear-gradient(145deg,rgba(225,237,255,.97),rgba(190,214,247,.94))!important;
+ border:1px solid rgba(198,161,91,.85)!important;
+ box-shadow:0 8px 22px rgba(2,17,44,.22)!important;
+ color:#10264b!important;
+}
+.category strong{color:#10264b!important}
+.category small{color:#36547d!important}
+.cat-art{background:linear-gradient(145deg,#f5f8ff,#d8e7fb)!important}
+.category:hover{border-color:#f0d9a5!important;box-shadow:0 12px 26px rgba(2,17,44,.28)!important}
+.preorder-feature{
+ background:linear-gradient(110deg,#071a3d 0%,#12366d 52%,#081d43 100%)!important;
+ border-color:#c6a15b!important;
+}
+.preorder-brand,.preorder-feature h2{color:#fff!important}
+.preorder-feature h2 em{color:#f0d9a5!important}
+.preorder-steps span{background:rgba(220,235,255,.10)!important;border-color:rgba(220,235,255,.38)!important}
+.preorder-steps span b{background:#dce9fb!important;color:#10264b!important}
+.contact{background:linear-gradient(115deg,#071a3d,#173b70)!important;border:1px solid rgba(198,161,91,.65)!important}
+footer{background:#06152f!important;border-top:1px solid #c6a15b!important}
+.product-card{border-color:rgba(198,161,91,.65)!important}
+.product-card>img{background:#eaf2ff!important}
+.product-card .add-btn{background:#102b59!important}
+.product-order-note{background:#dce9fb!important;color:#10264b!important}
+.back-categories{border-color:#c6a15b!important;background:#102b59!important}
+@media(max-width:760px){
+ .category{background:linear-gradient(145deg,#eaf2ff,#c8dcf7)!important}
+}
