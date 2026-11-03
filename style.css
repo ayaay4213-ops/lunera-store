@@ -254,3 +254,16 @@ footer{background:#06152f!important;border-top:1px solid #c6a15b!important}
 @media(max-width:760px){
  .category{background:linear-gradient(145deg,#eaf2ff,#c8dcf7)!important}
 }
+
+
+/* Warm Champagne Beige for text fields and coupon-style surfaces */
+:root{--warm-champagne:#F6D7BA}
+#checkoutForm input,#checkoutForm select,#checkoutForm textarea,
+.product-card .variant-select,.section-head select{
+ background:#F6D7BA!important;color:#10264b!important;border-color:#c6a15b!important;
+}
+.product-order-note,.promise-cta,.preorder-steps span,.cart-qty button{
+ background:#F6D7BA!important;color:#10264b!important;border-color:#c6a15b!important;
+}
+.cart-panel{background:#fff8f1!important}
+.cart-line{border-bottom-color:#e7c6a8!important}
