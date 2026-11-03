@@ -1,1 +1,200 @@
-[]
+[
+  {
+    "id": "lunera-beauty-01",
+    "name": "منتج جديد 01",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "دلّلي نفسكِ، فأنتِ تستحقين لمسة من الجمال كل يوم. ✨",
+    "image": "beauty/beauty .jpg.jpg",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-02",
+    "name": "منتج جديد 02",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "كوني مميزة بتفاصيل صغيرة تصنع فرقًا كبيرًا. ♡",
+    "image": "beauty/beauty2 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-03",
+    "name": "منتج جديد 03",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "اختاري ما يشبه ذوقكِ وأضيفي لمسة أنيقة ليومكِ. 🌷",
+    "image": "beauty/beauty3 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-04",
+    "name": "منتج جديد 04",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "لأن أناقتكِ تبدأ من اختياركِ، تألقي بطريقتكِ الخاصة. ✨",
+    "image": "beauty/beauty4 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-05",
+    "name": "منتج جديد 05",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "جدّدي إطلالتكِ واكتشفي تفاصيل تضيف لكِ سحرًا خاصًا. 💛",
+    "image": "beauty/beauty5 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-06",
+    "name": "منتج جديد 06",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "امنحي نفسكِ لحظة من الدلال مع اختياركِ الجديد. ♡",
+    "image": "beauty/beauty6 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-07",
+    "name": "منتج جديد 07",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "تفاصيل ناعمة، ولمسة جميلة تليق بكِ. 🌸",
+    "image": "beauty/beauty7 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-08",
+    "name": "منتج جديد 08",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "اجعلي كل يوم فرصة لتتألقي بأسلوبكِ. ✨",
+    "image": "beauty/beauty8 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-09",
+    "name": "منتج جديد 09",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "اختياركِ يعكس ذوقكِ… كوني دائمًا على طبيعتكِ. 🤍",
+    "image": "beauty/beauty9 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-10",
+    "name": "منتج جديد 10",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "لإطلالة تحمل لمستكِ الخاصة وتفاصيلكِ الجميلة. ♡",
+    "image": "beauty/beauty10 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-11",
+    "name": "منتج جديد 11",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "لأنكِ تستحقين كل ما هو جميل ومميز. ✨",
+    "image": "beauty/beauty11 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-12",
+    "name": "منتج جديد 12",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "أضيفي إلى يومكِ لمسة من الأناقة والنعومة. 🌷",
+    "image": "beauty/beauty12 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-13",
+    "name": "منتج جديد 13",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "اختاري الجمال الذي يناسبكِ وعبّري عن شخصيتكِ. 💫",
+    "image": "beauty/beauty13 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-14",
+    "name": "منتج جديد 14",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "تفصيلة جديدة قد تجعل يومكِ أجمل. ♡",
+    "image": "beauty/beauty14 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-15",
+    "name": "منتج جديد 15",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "تألقي بثقة، ودعي اختياراتكِ تتحدث عنكِ. ✨",
+    "image": "beauty/beauty15 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-16",
+    "name": "منتج جديد 16",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "لمسة أنثوية راقية تكمل أسلوبكِ الجميل. 🌸",
+    "image": "beauty/beauty16 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-17",
+    "name": "منتج جديد 17",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "دلّلي تفاصيل يومكِ باختيار يحمل ذوقكِ. 🤍",
+    "image": "beauty/beauty17 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-18",
+    "name": "منتج جديد 18",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "كوني أنتِ… واختاري ما يجعلكِ أكثر تألقًا. ✨",
+    "image": "beauty/beauty18 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-19",
+    "name": "منتج جديد 19",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "لأن التفاصيل البسيطة تصنع إحساسًا مختلفًا. ♡",
+    "image": "beauty/beauty19 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-20",
+    "name": "منتج جديد 20",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "جدّدي اختياراتكِ بلمسة ناعمة وأنيقة. 🌷",
+    "image": "beauty/beauty20 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-21",
+    "name": "منتج جديد 21",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "اختيار جميل يضيف إلى يومكِ شيئًا من البهجة. ✨",
+    "image": "beauty/beauty21 .jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-beauty-22",
+    "name": "منتج جديد 22",
+    "category": "الجمال والعناية",
+    "price": null,
+    "description": "لأن كل امرأة تستحق أن تشعر بالتميّز. 💛",
+    "image": "beauty/beauty22 .jpg.png",
+    "variants": []
+  }
+]
