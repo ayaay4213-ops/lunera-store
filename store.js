@@ -21,5 +21,5 @@ fetch('site-settings.json').then(r=>r.ok?r.json():null).then(s=>{
  if(s.backgroundImage)root.style.setProperty('--lunera-background-image','url("'+s.backgroundImage.replace(/"/g,'')+'")');
  /* Storefront typography remains high-contrast white on dark surfaces. */
  if(s.buttonColor)document.querySelectorAll('.gold-btn,.add-btn').forEach(el=>el.style.backgroundColor=s.buttonColor);
- if(s.cardColor)document.querySelectorAll('.category,.product-card').forEach(el=>{el.style.backgroundColor=s.cardColor;el.style.color='#f4eee4';});
+ if(s.cardColor)document.querySelectorAll('.category,.product-card').forEach(el=>{el.style.backgroundColor=s.cardColor;el.style.color='#071A3D';});
 }).catch(()=>{});

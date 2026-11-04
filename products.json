@@ -5,7 +5,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "💋 ملمّع شفاه – LENORE\n\nامنحي شفتيكِ لمسة من الجمال والأنوثة مع ملمّع شفاه يمنحكِ إطلالة لامعة وجذابة ✨\n\nقوام ناعم ولمعان جميل يضيف لمسة أنيقة إلى إطلالتكِ اليومية، سواء بمفرده أو فوق أحمر الشفاه.\n\n🤍 لأن جمالكِ يستحق أجمل التفاصيل.\n\nLENORE — جمالكِ يبدأ من التفاصيل.",
-    "image": "lip-gloss.png.png",
+    "image": "beauty/product-lip-gloss.png",
     "variants": [
       {
         "name": "اللون",
@@ -29,7 +29,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "✨ امشي براحة وثقة في كل خطوة! لاصقات ناعمة تحمي منطقة الفخذين من الاحتكاك المزعج، لتستمتعي بيومك بحرية وراحة دون قلق. 💗🌸",
-    "image": "lip-gloss.png......png",
+    "image": "beauty/product-thigh-protection.png",
     "variants": []
   },
   {
@@ -38,7 +38,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "💅✨ دلّلي أظافركِ واحصلي على لمسة صالون في منزلك! مصباح أظافر عملي وأنيق يساعد على تجفيف وتثبيت طلاء الجل بسرعة وسهولة، لتتألقي بأظافر جميلة في كل مناسبة. 💗",
-    "image": "lip-gloss.png....jpg",
+    "image": "beauty/product-nail-lamp.jpg",
     "variants": []
   },
   {
@@ -47,7 +47,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "دلّلي نفسكِ، فأنتِ تستحقين لمسة من الجمال كل يوم. ✨",
-    "image": "beauty/beauty .jpg.jpg",
+    "image": "beauty/beauty-01.jpg.jpg",
     "variants": []
   },
   {
@@ -56,7 +56,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "كوني مميزة بتفاصيل صغيرة تصنع فرقًا كبيرًا. ♡",
-    "image": "beauty/beauty2 .jpg.png",
+    "image": "beauty/beauty-02.jpg.png",
     "variants": []
   },
   {
@@ -65,7 +65,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "اختاري ما يشبه ذوقكِ وأضيفي لمسة أنيقة ليومكِ. 🌷",
-    "image": "beauty/beauty3 .jpg.png",
+    "image": "beauty/beauty-03.jpg.png",
     "variants": []
   },
   {
@@ -74,7 +74,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "لأن أناقتكِ تبدأ من اختياركِ، تألقي بطريقتكِ الخاصة. ✨",
-    "image": "beauty/beauty4 .jpg.png",
+    "image": "beauty/beauty-04.jpg.png",
     "variants": []
   },
   {
@@ -83,7 +83,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "جدّدي إطلالتكِ واكتشفي تفاصيل تضيف لكِ سحرًا خاصًا. 💛",
-    "image": "beauty/beauty5 .jpg.png",
+    "image": "beauty/beauty-05.jpg.png",
     "variants": []
   },
   {
@@ -92,7 +92,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "امنحي نفسكِ لحظة من الدلال مع اختياركِ الجديد. ♡",
-    "image": "beauty/beauty6 .jpg.png",
+    "image": "beauty/beauty-06.jpg.png",
     "variants": []
   },
   {
@@ -101,7 +101,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "تفاصيل ناعمة، ولمسة جميلة تليق بكِ. 🌸",
-    "image": "beauty/beauty7 .jpg.png",
+    "image": "beauty/beauty-07.jpg.png",
     "variants": []
   },
   {
@@ -110,7 +110,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "اجعلي كل يوم فرصة لتتألقي بأسلوبكِ. ✨",
-    "image": "beauty/beauty8 .jpg.png",
+    "image": "beauty/beauty-08.jpg.png",
     "variants": []
   },
   {
@@ -119,7 +119,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "اختياركِ يعكس ذوقكِ… كوني دائمًا على طبيعتكِ. 🤍",
-    "image": "beauty/beauty9 .jpg.png",
+    "image": "beauty/beauty-09.jpg.png",
     "variants": []
   },
   {
@@ -128,7 +128,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "لإطلالة تحمل لمستكِ الخاصة وتفاصيلكِ الجميلة. ♡",
-    "image": "beauty/beauty10 .jpg.png",
+    "image": "beauty/beauty-10.jpg.png",
     "variants": []
   },
   {
@@ -137,7 +137,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "لأنكِ تستحقين كل ما هو جميل ومميز. ✨",
-    "image": "beauty/beauty11 .jpg.png",
+    "image": "beauty/beauty-11.jpg.png",
     "variants": []
   },
   {
@@ -146,7 +146,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "أضيفي إلى يومكِ لمسة من الأناقة والنعومة. 🌷",
-    "image": "beauty/beauty12 .jpg.png",
+    "image": "beauty/beauty-12.jpg.png",
     "variants": []
   },
   {
@@ -155,7 +155,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "اختاري الجمال الذي يناسبكِ وعبّري عن شخصيتكِ. 💫",
-    "image": "beauty/beauty13 .jpg.png",
+    "image": "beauty/beauty-13.jpg.png",
     "variants": []
   },
   {
@@ -164,7 +164,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "تفصيلة جديدة قد تجعل يومكِ أجمل. ♡",
-    "image": "beauty/beauty14 .jpg.png",
+    "image": "beauty/beauty-14.jpg.png",
     "variants": []
   },
   {
@@ -173,7 +173,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "تألقي بثقة، ودعي اختياراتكِ تتحدث عنكِ. ✨",
-    "image": "beauty/beauty15 .jpg.png",
+    "image": "beauty/beauty-15.jpg.png",
     "variants": []
   },
   {
@@ -182,7 +182,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "لمسة أنثوية راقية تكمل أسلوبكِ الجميل. 🌸",
-    "image": "beauty/beauty16 .jpg.png",
+    "image": "beauty/beauty-16.jpg.png",
     "variants": []
   },
   {
@@ -191,7 +191,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "دلّلي تفاصيل يومكِ باختيار يحمل ذوقكِ. 🤍",
-    "image": "beauty/beauty17 .jpg.png",
+    "image": "beauty/beauty-17.jpg.png",
     "variants": []
   },
   {
@@ -200,7 +200,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "كوني أنتِ… واختاري ما يجعلكِ أكثر تألقًا. ✨",
-    "image": "beauty/beauty18 .jpg.png",
+    "image": "beauty/beauty-18.jpg.png",
     "variants": []
   },
   {
@@ -209,7 +209,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "لأن التفاصيل البسيطة تصنع إحساسًا مختلفًا. ♡",
-    "image": "beauty/beauty19 .jpg.png",
+    "image": "beauty/beauty-19.jpg.png",
     "variants": []
   },
   {
@@ -218,7 +218,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "جدّدي اختياراتكِ بلمسة ناعمة وأنيقة. 🌷",
-    "image": "beauty/beauty20 .jpg.png",
+    "image": "beauty/beauty-20.jpg.png",
     "variants": []
   },
   {
@@ -227,7 +227,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "اختيار جميل يضيف إلى يومكِ شيئًا من البهجة. ✨",
-    "image": "beauty/beauty21 .jpg.png",
+    "image": "beauty/beauty-21.jpg.png",
     "variants": []
   },
   {
@@ -236,7 +236,7 @@
     "category": "الجمال والعناية",
     "price": null,
     "description": "لأن كل امرأة تستحق أن تشعر بالتميّز. 💛",
-    "image": "beauty/beauty22 .jpg.png",
+    "image": "beauty/beauty-22.jpg.png",
     "variants": []
   },
   {
@@ -245,7 +245,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "اختاري قطعة تضيف إلى إطلالتكِ لمسة أنيقة وخاصة. ✨",
-    "image": "accessories/accessories1.jpg.png",
+    "image": "accessories/accessories-01.jpg.png",
     "variants": []
   },
   {
@@ -254,7 +254,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "تفاصيل جميلة تكمّل أناقتكِ في كل يوم. 🤍",
-    "image": "accessories/accessories2.jpg.png",
+    "image": "accessories/accessories-02.jpg.png",
     "variants": []
   },
   {
@@ -263,7 +263,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "أضيفي لمسة ناعمة تعبّر عن ذوقكِ. 🌷",
-    "image": "accessories/accessories3.jpg.png",
+    "image": "accessories/accessories-03.jpg.png",
     "variants": []
   },
   {
@@ -272,7 +272,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "أناقة بسيطة تجعل إطلالتكِ أكثر تميزًا. ✨",
-    "image": "accessories/accessories4.jpg.png",
+    "image": "accessories/accessories-04.jpg.png",
     "variants": []
   },
   {
@@ -281,7 +281,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "قطعة لطيفة لتكملي بها أسلوبكِ الخاص. 💛",
-    "image": "accessories/accessories5.jpg.png",
+    "image": "accessories/accessories-05.jpg.png",
     "variants": []
   },
   {
@@ -290,7 +290,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "لأن التفاصيل الصغيرة تصنع فرقًا جميلًا. ♡",
-    "image": "accessories/accessories6.jpg.png",
+    "image": "accessories/accessories-06.jpg.png",
     "variants": []
   },
   {
@@ -299,7 +299,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "جدّدي إطلالتكِ بلمسة من الأناقة والنعومة. 🌸",
-    "image": "accessories/accessories7.jpg.png",
+    "image": "accessories/accessories-07.jpg.png",
     "variants": []
   },
   {
@@ -308,7 +308,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "اختيار أنيق يرافقكِ ويبرز ذوقكِ الجميل. ✨",
-    "image": "accessories/accessories8.jpg.png",
+    "image": "accessories/accessories-08.jpg.png",
     "variants": []
   },
   {
@@ -317,7 +317,7 @@
     "category": "الإكسسوارات",
     "price": null,
     "description": "دلّلي إطلالتكِ بتفصيلة تستحقينها. 🤍",
-    "image": "accessories/accessories9.jpg.png",
+    "image": "accessories/accessories-09.jpg.png",
     "variants": []
   }
 ]

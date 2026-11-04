@@ -9,13 +9,14 @@
 - site-settings.json: ألوان وصور الواجهة.
 - store-config.json: رقم واتساب المتجر.
 - store.js و style.css: وظائف المتجر والتصميم.
-- صور الواجهة والخلفية والأقسام موجودة في جذر المشروع.
+- صور الواجهة والخلفية والأقسام والصور المرجعية مجمّعة داخل مجلد assets/.
+- صور المنتجات الحالية منظمة داخل beauty/ و accessories/، ومجلدا bags/ و school-supplies/ جاهزان لإضافة صور الأقسام لاحقًا.
 
 روابط الملفات على GitHub:
-- لوحة التحكم: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-admin-upgrade/dashboard.html
-- إدارة المنتجات: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-admin-upgrade/admin.html
-- محرر التصميم: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-admin-upgrade/design-editor.html
-- واجهة المتجر: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-admin-upgrade/index.html
+- لوحة التحكم: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-final-polish-2026-11-04/dashboard.html
+- إدارة المنتجات: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-final-polish-2026-11-04/admin.html
+- محرر التصميم: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-final-polish-2026-11-04/design-editor.html
+- واجهة المتجر: https://github.com/ayaay4213-ops/lunera-store/blob/lunera-final-polish-2026-11-04/index.html
 
 طريقة الربط والنشر المجاني:
 1. افتحي لوحة التحكم عبر استضافة صفحات ثابتة بعد نشر هذا الفرع.
@@ -30,4 +31,4 @@
 - المتجر يحتوي على سلة، اختيار الولاية، نموذج بيانات الزبون، وتجهيز الطلب وإرساله عبر WhatsApp.
 - لا توجد منتجات حقيقية في products.json حتى الآن؛ أضيفي منتجاتك وصورها وأسعارها قبل الإعلان.
 - لا نعتبر المتجر منشورًا وجاهزًا لاستقبال الطلبات حتى يتم ربط رقم واتساب واختبار طلب حقيقي تجريبي.
-- التعديلات محفوظة في فرع lunera-admin-upgrade ولا تغيّر main أو متجر SILVA.
+- التعديلات محفوظة في فرع lunera-final-polish-2026-11-04 ولا تغيّر main أو متجر SILVA.
