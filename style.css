@@ -745,3 +745,40 @@ footer small{font-size:9px!important}
  .hero{height:auto!important;min-height:0!important}
  .hero>img{width:100%!important;height:auto!important;object-fit:contain!important;object-position:center top!important}
 }
+
+
+/* LUNÉRA: make Temu instruction number boxes smaller and trim panel height slightly */
+.preorder-feature{
+ padding-top:4px!important;
+ padding-bottom:4px!important;
+}
+.preorder-topline{margin:0!important;line-height:1!important}
+.preorder-kicker{line-height:1.05!important;margin:0!important}
+.preorder-feature h2{margin:0!important;line-height:1.12!important}
+.preorder-feature>p{margin:1px auto!important;line-height:1.15!important}
+.preorder-steps{margin:1px auto!important;gap:3px!important}
+.preorder-steps span{
+ padding:2px 4px!important;
+ line-height:1.05!important;
+ gap:3px!important;
+}
+.preorder-steps span b{
+ width:10px!important;
+ height:10px!important;
+ min-width:10px!important;
+ font-size:7px!important;
+ line-height:10px!important;
+}
+.preorder-feature>small{line-height:1.1!important;margin:0 auto!important}
+@media(max-width:600px){
+ .preorder-feature{padding:3px 6px!important}
+ .preorder-feature h2{font-size:12px!important}
+ .preorder-feature>p{font-size:7.5px!important}
+ .preorder-steps{gap:2px!important;margin:1px auto!important}
+ .preorder-steps span{font-size:6.5px!important;padding:2px 2px!important}
+ .preorder-steps span b{
+  width:9px!important;height:9px!important;min-width:9px!important;
+  font-size:6px!important;line-height:9px!important;
+ }
+ .preorder-feature>small{font-size:6px!important}
+}
