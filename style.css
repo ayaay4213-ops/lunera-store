@@ -523,3 +523,35 @@ footer small{font-size:9px!important}
  footer p{font-size:10px!important}
  footer small{font-size:8px!important}
 }
+
+
+/* LUNÉRA: compact Temu preorder information panel */
+.preorder-feature{
+ width:min(90%,760px)!important;
+ max-width:760px!important;
+ margin:14px auto 20px!important;
+ padding:16px 20px!important;
+ border-radius:14px!important;
+ gap:9px!important;
+}
+.preorder-topline{gap:7px!important;margin-bottom:1px!important}
+.preorder-brand,.temu-wordmark{font-size:15px!important;line-height:1.2!important}
+.preorder-divider{font-size:12px!important}
+.preorder-kicker{font-size:10px!important;line-height:1.4!important}
+.preorder-feature h2{font-size:19px!important;line-height:1.5!important;margin:3px 0!important}
+.preorder-feature>p{font-size:11px!important;line-height:1.65!important;margin:2px 0 5px!important}
+.preorder-steps{gap:7px!important;margin:4px 0!important}
+.preorder-steps span{font-size:10px!important;padding:6px 9px!important;border-radius:9px!important;gap:5px!important}
+.preorder-steps span b{width:19px!important;height:19px!important;min-width:19px!important;font-size:10px!important}
+.preorder-feature>small{display:block!important;font-size:9px!important;line-height:1.6!important;margin-top:3px!important}
+@media(max-width:600px){
+ .preorder-feature{width:92%!important;margin:10px auto 15px!important;padding:12px 11px!important;border-radius:11px!important;gap:7px!important}
+ .preorder-brand,.temu-wordmark{font-size:13px!important}
+ .preorder-kicker{font-size:9px!important}
+ .preorder-feature h2{font-size:16px!important;line-height:1.45!important}
+ .preorder-feature>p{font-size:10px!important;line-height:1.55!important}
+ .preorder-steps{gap:5px!important}
+ .preorder-steps span{font-size:9px!important;padding:5px 6px!important;gap:4px!important}
+ .preorder-steps span b{width:17px!important;height:17px!important;min-width:17px!important;font-size:9px!important}
+ .preorder-feature>small{font-size:8px!important;line-height:1.5!important}
+}
