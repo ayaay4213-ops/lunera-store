@@ -255,3 +255,46 @@ nav a{color:#FFF9F3!important}nav a:hover{color:#F6D7BA!important}
 .cart-line{border-bottom-color:#E7C6A8!important}.cart-total{border-color:#C7A45D!important}
 @media(max-width:1050px){.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 @media(max-width:760px){.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}.cat-art{height:145px!important}}
+
+
+/* LUNÉRA final visual polish — preserve layout and store behavior */
+:root{
+  --lunera-royal:#071A3D;
+  --lunera-champagne:#F6D7BA;
+  --lunera-gold:#C7A45D;
+  --lunera-ivory:#FFF9F3;
+}
+body{font-family:'Cairo',sans-serif;color:var(--lunera-royal)}
+.topbar{box-shadow:0 5px 22px rgba(7,26,61,.16)}
+.brand{letter-spacing:.08em}
+.section-head{align-items:end}
+.category{overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.category img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.category:active{transform:scale(.985)}
+.category strong{font-weight:800}
+.category small{line-height:1.6}
+.gold-btn,.cart-btn,.promise-cta,.add-btn,.back-categories{
+  transition:filter .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+.gold-btn:hover,.cart-btn:hover,.promise-cta:hover,.add-btn:hover,.back-categories:hover{
+  filter:brightness(1.04);transform:translateY(-1px)
+}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{
+  outline:2px solid var(--lunera-gold);outline-offset:3px
+}
+#checkoutForm input::placeholder,#checkoutForm textarea::placeholder{color:#66738A;opacity:1}
+.product-card{overflow:hidden;border-radius:16px}
+.product-card>img{background:linear-gradient(145deg,#FFF9F3,#F6D7BA)!important}
+.cart-panel{border:1px solid rgba(199,164,93,.65);box-shadow:0 14px 40px rgba(7,26,61,.18)}
+footer{border-top:1px solid var(--lunera-gold)}
+@media(max-width:760px){
+ .topbar{gap:8px;padding:10px 12px}
+ .brand{font-size:17px}
+ .topbar nav{gap:10px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+ .topbar nav::-webkit-scrollbar{display:none}
+ .hero-copy{padding:22px 18px}
+ .section{padding-top:28px;padding-bottom:28px}
+ .section-head{gap:10px;flex-wrap:wrap}
+ .category{border-radius:15px}
+ .category strong{font-size:14px}
+}
