@@ -1,8 +1,8 @@
 {
-  "buttonColor": "#c7a45d",
-  "titleColor": "#f7f4ed",
-  "backgroundColor": "#f7f4ed",
-  "cardColor": "#10284f",
-  "heroImage": "hero.jpg.jpg",
-  "backgroundImage": "09-store-background-blur.jpg.png"
+  "buttonColor": "#C7A45D",
+  "titleColor": "#071A3D",
+  "backgroundColor": "#F6D7BA",
+  "cardColor": "#F6D7BA",
+  "heroImage": "assets/hero.jpg.jpg",
+  "backgroundImage": "assets/07-store-background-blur.jpg.png"
 }
