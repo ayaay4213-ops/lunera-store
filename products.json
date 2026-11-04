@@ -427,41 +427,5 @@
     "description": "حقيبة برسمة مرحة وألوان جذابة، لتكملي إطلالتكِ بلمسة مختلفة. 🌸",
     "image": "https://i.ibb.co/J8Vtj0Y/bag-05-jpg.png",
     "variants": []
-  },
-  {
-    "id": "lunera-accessory-10",
-    "name": "إكسسوار أنيق",
-    "category": "الإكسسوارات",
-    "price": null,
-    "description": "إكسسوار أنيق يضيف لمسة جميلة ومميزة إلى إطلالتكِ اليومية. ✨",
-    "image": "https://i.postimg.cc/FY0NSTs3/accessory-01.png",
-    "variants": []
-  },
-  {
-    "id": "lunera-accessory-11",
-    "name": "إكسسوار أنيق",
-    "category": "الإكسسوارات",
-    "price": null,
-    "description": "اختيار ناعم وأنيق ليكمل تفاصيل إطلالتكِ ويبرز ذوقكِ. 🤍",
-    "image": "https://i.postimg.cc/f3ZZfYJ2/accessory-02.png",
-    "variants": []
-  },
-  {
-    "id": "lunera-accessory-12",
-    "name": "إكسسوار أنيق",
-    "category": "الإكسسوارات",
-    "price": null,
-    "description": "تفصيلة جميلة تضيف لمسة من الأناقة إلى يومكِ. 🌸",
-    "image": "https://i.postimg.cc/hXVcm2PN/accessory-03.png",
-    "variants": []
-  },
-  {
-    "id": "lunera-accessory-13",
-    "name": "إكسسوار أنيق",
-    "category": "الإكسسوارات",
-    "price": null,
-    "description": "إكسسوار مميز لمحبات اللمسات الأنيقة والتفاصيل الجميلة. ♡",
-    "image": "https://i.postimg.cc/4KZZQpm8/accessory-04.png",
-    "variants": []
   }
 ]
