@@ -339,3 +339,56 @@ footer{border-top:1px solid var(--lunera-gold)}
 .product-card .variant-select,#checkoutForm input,#checkoutForm select,#checkoutForm textarea{
  background:#FFF9F3!important;color:#071A3D!important;border-color:#C7A45D!important
 }
+
+
+/* LUNÉRA — agreed champagne surfaces around untouched royal-blue artwork */
+:root{
+  --lunera-royal:#071A3D;
+  --lunera-champagne:#F6D7BA;
+  --lunera-gold:#C7A45D;
+}
+/* Text panel: champagne surface, royal-blue typography */
+.hero-copy{
+  background:rgba(246,215,186,.96)!important;
+  color:#071A3D!important;
+  border:1px solid #C7A45D!important;
+  border-radius:16px!important;
+  text-shadow:none!important;
+  box-shadow:0 8px 24px rgba(7,26,61,.12)!important;
+  backdrop-filter:none!important;
+}
+.hero-copy h1,.hero-copy p,.hero-copy .eyebrow{
+  color:#071A3D!important;
+  text-shadow:none!important;
+}
+.hero-copy h1 em{color:#9B742F!important}
+/* Champagne category cards and image frames; original image pixels stay unchanged */
+.category{
+  background:#F6D7BA!important;
+  color:#071A3D!important;
+  border:1px solid #C7A45D!important;
+  border-radius:18px!important;
+  padding:10px 10px 14px!important;
+  box-shadow:0 8px 22px rgba(7,26,61,.10)!important;
+}
+.cat-art{
+  background:#F6D7BA!important;
+  border:1px solid rgba(199,164,93,.65)!important;
+  border-radius:12px!important;
+  overflow:hidden!important;
+  aspect-ratio:4/3!important;
+  height:auto!important;
+}
+.category img,.cat-art img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  filter:none!important;
+  opacity:1!important;
+  mix-blend-mode:normal!important;
+}
+.category strong{color:#071A3D!important}
+.category small{color:#425574!important}
+/* Champagne backgrounds for the store's written content panels */
+.section-head h2,.section-head p{color:#071A3D!important}
