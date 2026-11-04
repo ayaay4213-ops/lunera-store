@@ -119,8 +119,8 @@ for(const id of colorIds){
 byId('previewBtn').addEventListener('click',preview);
 byId('resetBtn').addEventListener('click',()=>{
   for(const id of colorIds){byId(id).value=defaults[id];byId(id+'Hex').value=defaults[id];byId(id+'Hex').classList.remove('invalid');}
-  byId('heroImage').value='assets/01-homepage.jpg.png';
-  byId('backgroundImage').value='assets/07-store-background-blur.jpg.png';
+  byId('heroImage').value='hero.jpg.jpg';
+  byId('backgroundImage').value='background.jpg.png';
   preview();setStatus('تمت استعادة الألوان المتفق عليها.');
 });
 byId('exportBtn').addEventListener('click',()=>{
