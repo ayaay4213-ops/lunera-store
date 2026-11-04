@@ -350,3 +350,49 @@ nav a:hover{color:var(--lunera-gold-light)}
  .cat-art{height:145px}
  .category{min-height:0;padding:10px 10px 13px}
 }
+
+
+/* LUNÉRA final agreed palette: royal blue + Warm Champagne Beige */
+:root{
+ --lunera-royal:#071A3D;
+ --lunera-royal-mid:#10284F;
+ --lunera-champagne:#F6D7BA;
+ --lunera-gold:#C7A45D;
+}
+body:before{
+ background-image:url('09-store-background-blur.jpg.png')!important;
+ background-size:cover!important;
+ background-position:center!important;
+ background-repeat:no-repeat!important;
+ filter:blur(8px)!important;
+ opacity:.38!important;
+}
+body{background:#071A3D!important}
+.topbar,.promise,footer{
+ background:linear-gradient(110deg,#071A3D,#10284F,#071A3D)!important;
+ border-color:#C7A45D!important;
+}
+.category{
+ background:linear-gradient(145deg,#F6D7BA,#EED0B2)!important;
+ border:1px solid rgba(199,164,93,.9)!important;
+ color:#10284F!important;
+}
+.category strong{color:#10284F!important}
+.category small{color:#425574!important}
+.cat-art{background:#F6D7BA!important}
+#checkoutForm input,#checkoutForm select,#checkoutForm textarea,
+.product-card .variant-select,.section-head select{
+ background:#F6D7BA!important;color:#10284F!important;border-color:#C7A45D!important;
+}
+.product-order-note,.promise-cta,.preorder-steps span,.cart-qty button{
+ background:#F6D7BA!important;color:#10284F!important;border-color:#C7A45D!important;
+}
+.product-card{border-color:rgba(199,164,93,.75)!important}
+.product-card .add-btn,.back-categories{
+ background:#10284F!important;color:#F6D7BA!important;border-color:#C7A45D!important;
+}
+.gold-btn,.cart-btn{
+ background:linear-gradient(120deg,#F6D7BA,#C7A45D)!important;
+ color:#071A3D!important;border-color:#E6D2A2!important;
+}
+.contact{background:linear-gradient(120deg,#071A3D,#173B6D)!important;border-color:#C7A45D!important}
