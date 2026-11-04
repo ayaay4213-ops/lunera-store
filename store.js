@@ -10,6 +10,7 @@
     const champagne=valid(s.backgroundColor)?s.backgroundColor:'#F6D7BA';
     const cards=valid(s.cardColor)?s.cardColor:'#F6D7BA';
     const css=`
+      body:before{background-color:${champagne}!important}
       .topbar{background:${blue}!important;border-color:${gold}!important}
       .brand,.brand small,.crown{color:${gold}!important}
       .topbar nav a{color:#fff!important}
