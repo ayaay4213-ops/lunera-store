@@ -375,3 +375,55 @@ body:before{
  .category strong{font-size:11px!important;padding:3px 7px!important}
  .category small{font-size:8px!important}
 }
+
+
+/* LUNÉRA storefront balance: royal blue base with visible champagne panels */
+.category{
+ background:linear-gradient(145deg,#F9E4D1,#EED1B2)!important;
+ border:1px solid #C7A45D!important;
+ color:#071A3D!important;
+ box-shadow:0 9px 24px rgba(0,0,0,.20)!important;
+}
+.cat-art{background:#F6D7BA!important;border:1px solid rgba(199,164,93,.55)!important}
+.cat-art img{background:#F6D7BA!important}
+.category strong{
+ background:transparent!important;color:#071A3D!important;
+ border-radius:0!important;padding:3px 4px!important;
+}
+.category small{color:#33476A!important}
+.product-card{
+ background:linear-gradient(145deg,#F9E4D1,#F1D9C0)!important;
+ color:#071A3D!important;border:1px solid #C7A45D!important;
+}
+.product-card>img{background:#F6D7BA!important}
+.product-info{background:transparent!important}
+.product-info h3,.product-info p,.product-info .price,.price,.variant-label{color:#071A3D!important}
+.product-order-note{background:#C7A45D!important;color:#071A3D!important}
+.preorder-feature{
+ background:linear-gradient(145deg,#F9E4D1,#EED1B2)!important;
+ color:#071A3D!important;border:1px solid #C7A45D!important;
+}
+.preorder-brand,.preorder-kicker,.preorder-feature h2,
+.preorder-feature>p,.preorder-feature>small{color:#071A3D!important}
+.preorder-feature h2 em{color:#8F6410!important}
+.preorder-steps span{
+ background:rgba(7,26,61,.08)!important;
+ border-color:rgba(7,26,61,.25)!important;color:#071A3D!important;
+}
+.preorder-steps span b{background:#071A3D!important;color:#F9E4D1!important}
+.contact{
+ background:linear-gradient(145deg,#F9E4D1,#EED1B2)!important;
+ border:1px solid #C7A45D!important;color:#071A3D!important;
+}
+.contact h2,.contact p{color:#071A3D!important}
+.cart-panel{background:#F9E4D1!important;color:#071A3D!important}
+.cart-head h3,.cart-line,.cart-total,.muted,.cart-line button{color:#071A3D!important}
+.cart-line{border-color:rgba(7,26,61,.18)!important}
+.cart-total{border-color:#C7A45D!important}
+.empty-state{
+ background:#F9E4D1!important;color:#071A3D!important;
+ border-color:#C7A45D!important;
+}
+@media(max-width:600px){
+ .category{background:linear-gradient(145deg,#F9E4D1,#EED1B2)!important}
+}
