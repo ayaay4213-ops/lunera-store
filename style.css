@@ -427,3 +427,64 @@ body:before{
 @media(max-width:600px){
  .category{background:linear-gradient(145deg,#F9E4D1,#EED1B2)!important}
 }
+
+
+/* LUNÉRA requested final tidy-up: remove hero slogan and show complete compact category images */
+.hero-copy,.hero-shade{display:none!important}
+.hero{height:auto!important;min-height:0!important;overflow:hidden!important}
+.hero>img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important}
+
+/* Compact category tiles; preserve the complete supplied artwork without cropping */
+.category-grid{
+ display:grid!important;
+ grid-template-columns:repeat(5,minmax(0,1fr))!important;
+ gap:10px!important;
+ align-items:start!important;
+}
+.category{
+ min-width:0!important;
+ min-height:0!important;
+ height:auto!important;
+ padding:6px!important;
+ border-radius:12px!important;
+}
+.cat-art{
+ display:block!important;
+ width:100%!important;
+ height:auto!important;
+ aspect-ratio:1/1!important;
+ margin:0 0 5px!important;
+ overflow:hidden!important;
+ border-radius:8px!important;
+ background:#F6D7BA!important;
+}
+.cat-art img{
+ display:block!important;
+ width:100%!important;
+ height:100%!important;
+ aspect-ratio:1/1!important;
+ object-fit:contain!important;
+ object-position:center!important;
+ padding:2px!important;
+ background:#F6D7BA!important;
+}
+.category strong{
+ display:block!important;
+ width:100%!important;
+ padding:3px 2px!important;
+ font-size:11px!important;
+ line-height:1.35!important;
+ text-align:center!important;
+ white-space:normal!important;
+}
+.category small{display:none!important}
+@media(max-width:760px){
+ .category-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:9px!important;
+ }
+ .category{padding:5px!important;border-radius:10px!important}
+ .cat-art{aspect-ratio:1/1!important;margin-bottom:4px!important}
+ .cat-art img{aspect-ratio:1/1!important;padding:1px!important}
+ .category strong{font-size:10px!important;padding:3px 1px!important}
+}
