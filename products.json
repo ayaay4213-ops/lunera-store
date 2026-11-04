@@ -319,5 +319,68 @@
     "description": "دلّلي إطلالتكِ بتفصيلة تستحقينها. 🤍",
     "image": "accessories/accessories9.jpg.png",
     "variants": []
+  },
+  {
+    "id": "lunera-school-01",
+    "name": "دفاتر وأجندات ملهمة",
+    "category": "مستلزمات الدراسة",
+    "price": null,
+    "description": "دفاتر بتصاميم لطيفة تساعدكِ على تدوين أفكاركِ وتنظيم يومكِ. ♡",
+    "image": "https://i.ibb.co/sXQPL1B/school-bag-1-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-school-02",
+    "name": "قفاز عملي مريح",
+    "category": "مستلزمات الدراسة",
+    "price": null,
+    "description": "تصميم مريح وخفيف، بتفاصيل عملية للاستخدام اليومي. ✨",
+    "image": "https://i.ibb.co/6c8D0mQr/school-bag-2-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-school-03",
+    "name": "حامل للرسم والإبداع",
+    "category": "مستلزمات الدراسة",
+    "price": null,
+    "description": "أضيفي لمسة تنظيم إلى مساحة الرسم وأطلقي العنان لإبداعكِ. 🎨",
+    "image": "https://i.ibb.co/tPp4JcWb/school-bag-3-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-school-04",
+    "name": "دفتر وألوان للرسم",
+    "category": "مستلزمات الدراسة",
+    "price": null,
+    "description": "مساحة جميلة لتجربة الألوان وتحويل أفكاركِ إلى لوحات. 🌷",
+    "image": "https://i.ibb.co/8nbXM9Pr/school-bag-4-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-school-05",
+    "name": "حقيبة لحمل الحاسوب",
+    "category": "مستلزمات الدراسة",
+    "price": null,
+    "description": "حقيبة أنيقة وعملية لحمل الحاسوب ومستلزماتكِ أثناء التنقل. ♡",
+    "image": "https://i.ibb.co/21HzrYGZ/school-bag-5-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-school-06",
+    "name": "دفتر اسكتش للرسم",
+    "category": "مستلزمات الدراسة",
+    "price": null,
+    "description": "أوراق مخصصة لأفكاركِ ورسوماتكِ ولمساتكِ الإبداعية. ✨",
+    "image": "https://i.ibb.co/Ddmd3Mn/school-bag-6-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-school-07",
+    "name": "حقيبة حاسوب بتصميم أنيق",
+    "category": "مستلزمات الدراسة",
+    "price": null,
+    "description": "اختيار أنيق لحمل الحاسوب وتنظيم أغراضكِ اليومية. 💛",
+    "image": "https://i.ibb.co/Ps0KwbkC/school-bag-7-jpg.png",
+    "variants": []
   }
 ]
