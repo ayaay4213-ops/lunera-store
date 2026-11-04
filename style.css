@@ -300,3 +300,6 @@ body:before{
  .preorder-feature{background:var(--lunera-card,#F6D7BA)!important}
  .preorder-steps span{color:var(--lunera-title,#071A3D)!important}
 }
+
+/* LUNÉRA supplied category artwork layout */
+@media(min-width:761px){.category-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
