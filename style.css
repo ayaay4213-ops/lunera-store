@@ -218,14 +218,14 @@ main{width:100%;max-width:none!important}
 :root{
  --lunera-button:#C7A45D;
  --lunera-title:#071A3D;
- --lunera-background:#F9E4D1;
- --lunera-card:#F9E4D1;
+ --lunera-background:#FFF7F0;
+ --lunera-card:#FFF7F0;
 }
-html{background:var(--lunera-background,#F9E4D1)!important}
-body{background:var(--lunera-background,#F9E4D1)!important;color:var(--lunera-title,#071A3D)!important}
+html{background:var(--lunera-background,#FFF7F0)!important}
+body{background:var(--lunera-background,#FFF7F0)!important;color:var(--lunera-title,#071A3D)!important}
 body:before{
  background-image:var(--lunera-background-image,url('background.jpg.png'))!important;
- background-color:var(--lunera-background,#F9E4D1)!important;
+ background-color:var(--lunera-background,#FFF7F0)!important;
  filter:blur(3px)!important;opacity:.72!important;
 }
 .topbar{background:var(--lunera-title,#071A3D)!important;border-bottom:1px solid var(--lunera-button,#C7A45D)!important}
@@ -248,36 +248,36 @@ body:before{
 .section-head h2,.collection-heading h2{color:var(--lunera-title,#071A3D)!important}
 .section-head p{color:var(--lunera-title,#071A3D)!important;opacity:.8}
 .category{
- background:var(--lunera-card,#F9E4D1)!important;
+ background:var(--lunera-card,#FFF7F0)!important;
  color:var(--lunera-title,#071A3D)!important;
  border:1px solid var(--lunera-button,#C7A45D)!important;
  box-shadow:0 8px 22px rgba(7,26,61,.08)!important;
 }
 .category strong,.category small{color:var(--lunera-title,#071A3D)!important}
-.cat-art{background:var(--lunera-card,#F9E4D1)!important}
+.cat-art{background:var(--lunera-card,#FFF7F0)!important}
 .product-card{
- background:var(--lunera-card,#F9E4D1)!important;
+ background:var(--lunera-card,#FFF7F0)!important;
  color:var(--lunera-title,#071A3D)!important;
  border:1px solid var(--lunera-button,#C7A45D)!important;
  box-shadow:0 8px 22px rgba(7,26,61,.08)!important;
 }
 .product-info h3,.product-info p,.product-info .price,.price,.variant-label{color:var(--lunera-title,#071A3D)!important}
-.product-card>img{background:var(--lunera-card,#F9E4D1)!important}
+.product-card>img{background:var(--lunera-card,#FFF7F0)!important}
 .product-order-note{background:var(--lunera-button,#C7A45D)!important;color:var(--lunera-title,#071A3D)!important}
 .empty-state{
- background:var(--lunera-card,#F9E4D1)!important;
+ background:var(--lunera-card,#FFF7F0)!important;
  color:var(--lunera-title,#071A3D)!important;
  border:1px dashed var(--lunera-button,#C7A45D)!important;
 }
 .contact{
- background:var(--lunera-card,#F9E4D1)!important;
+ background:var(--lunera-card,#FFF7F0)!important;
  color:var(--lunera-title,#071A3D)!important;
  border:1px solid var(--lunera-button,#C7A45D)!important;
  box-shadow:0 10px 28px rgba(7,26,61,.08)!important;
 }
 .contact h2,.contact p{color:var(--lunera-title,#071A3D)!important}
 .preorder-feature{
- background:var(--lunera-card,#F9E4D1)!important;
+ background:var(--lunera-card,#FFF7F0)!important;
  color:var(--lunera-title,#071A3D)!important;
  border:1px solid var(--lunera-button,#C7A45D)!important;
  box-shadow:0 8px 22px rgba(7,26,61,.08)!important;
@@ -291,13 +291,13 @@ body:before{
 .section-head select,#checkoutForm input,#checkoutForm select,#checkoutForm textarea{
  border-color:var(--lunera-button,#C7A45D)!important;color:var(--lunera-title,#071A3D)!important;background:#fffdf9!important;
 }
-.cart-panel{background:var(--lunera-card,#F9E4D1)!important;color:var(--lunera-title,#071A3D)!important;border-inline-start:2px solid var(--lunera-button,#C7A45D)!important}
+.cart-panel{background:var(--lunera-card,#FFF7F0)!important;color:var(--lunera-title,#071A3D)!important;border-inline-start:2px solid var(--lunera-button,#C7A45D)!important}
 .cart-head h3,.cart-line,.cart-total,.muted{color:var(--lunera-title,#071A3D)!important}
 .cart-line{border-color:rgba(7,26,61,.16)!important}
 .cart-line button{color:var(--lunera-title,#071A3D)!important}
 .cart-total{border-color:var(--lunera-button,#C7A45D)!important}
 @media(max-width:600px){
- .preorder-feature{background:var(--lunera-card,#F9E4D1)!important}
+ .preorder-feature{background:var(--lunera-card,#FFF7F0)!important}
  .preorder-steps span{color:var(--lunera-title,#071A3D)!important}
 }
 
