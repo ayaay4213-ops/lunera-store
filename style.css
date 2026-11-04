@@ -695,3 +695,31 @@ footer small{font-size:9px!important}
  .preorder-steps span{font-size:7px!important;padding:3px 2px!important}
  .preorder-feature>small{font-size:6.5px!important;line-height:1.15!important}
 }
+
+
+/* LUNÉRA: keep the hero anchored at the top and extend it downward */
+.hero{
+ height:clamp(430px,58vw,700px)!important;
+ min-height:430px!important;
+ position:relative!important;
+ overflow:hidden!important;
+}
+.hero>img{
+ display:block!important;
+ width:100%!important;
+ height:100%!important;
+ object-fit:cover!important;
+ object-position:center top!important;
+}
+@media(max-width:760px){
+ .hero{
+  height:clamp(390px,118vw,520px)!important;
+  min-height:390px!important;
+ }
+ .hero>img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+ }
+}
