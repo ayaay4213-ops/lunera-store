@@ -723,3 +723,25 @@ footer small{font-size:9px!important}
   object-position:center top!important;
  }
 }
+
+
+/* LUNÉRA rollback: restore the original compact hero image and full page layout */
+.hero{
+ height:auto!important;
+ min-height:0!important;
+ position:relative!important;
+ overflow:hidden!important;
+ background:transparent!important;
+}
+.hero>img{
+ display:block!important;
+ width:100%!important;
+ height:auto!important;
+ max-height:none!important;
+ object-fit:contain!important;
+ object-position:center top!important;
+}
+@media(max-width:760px){
+ .hero{height:auto!important;min-height:0!important}
+ .hero>img{width:100%!important;height:auto!important;object-fit:contain!important;object-position:center top!important}
+}
