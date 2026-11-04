@@ -382,5 +382,50 @@
     "description": "اختيار أنيق لحمل الحاسوب وتنظيم أغراضكِ اليومية. 💛",
     "image": "https://i.ibb.co/Ps0KwbkC/school-bag-7-jpg.png",
     "variants": []
+  },
+  {
+    "id": "lunera-bag-01",
+    "name": "حقيبة أنيقة",
+    "category": "الحقائب",
+    "price": null,
+    "description": "حقيبة بتصميم فني مميز، تضيف لمسة من الأناقة إلى إطلالتكِ اليومية. ✨",
+    "image": "https://i.ibb.co/VWRWXRm8/bag-01-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-bag-02",
+    "name": "حقيبة أنيقة",
+    "category": "الحقائب",
+    "price": null,
+    "description": "حقيبة بطبعة فراشات أنيقة لمحبات التفاصيل الهادئة والمميزة. ♡",
+    "image": "https://i.ibb.co/q3W9hb52/bag-02-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-bag-03",
+    "name": "حقيبة أنيقة",
+    "category": "الحقائب",
+    "price": null,
+    "description": "حقيبة بطبعة عصرية، بتصميم يلفت الأنظار ويعبّر عن ذوقكِ. ✨",
+    "image": "https://i.ibb.co/Vc57KR86/bag-03-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-bag-04",
+    "name": "حقيبة أنيقة",
+    "category": "الحقائب",
+    "price": null,
+    "description": "حقيبة عملية بتصميم أنيق، متوفرة بألوان ظاهرة في الصورة. 🤍",
+    "image": "https://i.ibb.co/p6w13SkC/bag-04-jpg.png",
+    "variants": []
+  },
+  {
+    "id": "lunera-bag-05",
+    "name": "حقيبة أنيقة",
+    "category": "الحقائب",
+    "price": null,
+    "description": "حقيبة برسمة مرحة وألوان جذابة، لتكملي إطلالتكِ بلمسة مختلفة. 🌸",
+    "image": "https://i.ibb.co/J8Vtj0Y/bag-05-jpg.png",
+    "variants": []
   }
 ]
