@@ -298,3 +298,44 @@ footer{border-top:1px solid var(--lunera-gold)}
  .category{border-radius:15px}
  .category strong{font-size:14px}
 }
+
+
+/* LUNÉRA — protect the original royal-blue artwork and category images */
+:root{
+ --wine:#071A3D;
+ --wine2:#10284F;
+ --pink:#F6D7BA;
+ --pale:#FBEBDD;
+ --gold:#C7A45D;
+ --gold2:#E8D2A2;
+ --cream:#FFF9F3;
+ --ink:#071A3D;
+ --lunera-royal:#071A3D;
+ --lunera-champagne:#F6D7BA;
+ --lunera-gold:#C7A45D;
+}
+/* Keep authored hero artwork intact: no recoloring, overlays added by CSS, or filters */
+.hero>img{filter:none!important;opacity:1!important;object-fit:cover!important}
+.hero-shade{background:transparent!important;opacity:0!important}
+.hero-copy,.hero h1,.hero p{text-shadow:0 1px 8px rgba(7,26,61,.18)}
+/* Category images are supplied royal-blue designs; display them unchanged */
+.category,.cat-art{background:transparent!important}
+.category{border:0!important;box-shadow:none!important;padding:0!important;overflow:hidden!important}
+.category img,.cat-art img{
+ display:block!important;
+ width:100%!important;
+ height:100%!important;
+ object-fit:cover!important;
+ filter:none!important;
+ opacity:1!important;
+ mix-blend-mode:normal!important;
+}
+.cat-art{height:auto!important;aspect-ratio:4/3!important;overflow:hidden!important;border-radius:14px!important}
+.category strong{color:#071A3D!important}
+.category small{color:#425574!important}
+/* Champagne and gold remain supporting accents, not replacements for blue artwork */
+.product-card{background:#FFF9F3!important;border-color:rgba(199,164,93,.72)!important}
+.product-card>img{background:#FFF9F3!important}
+.product-card .variant-select,#checkoutForm input,#checkoutForm select,#checkoutForm textarea{
+ background:#FFF9F3!important;color:#071A3D!important;border-color:#C7A45D!important
+}
