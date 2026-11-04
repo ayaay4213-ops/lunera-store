@@ -62,11 +62,12 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #4973
       <div class="field"><label for="backgroundImage">صورة الخلفية الضبابية (اختياري)</label><input id="backgroundImage" type="text" value="background.jpg.png" placeholder="مثال: assets/07-store-background-blur.jpg.png"></div>
       <div class="actions">
         <button id="previewBtn" type="button">معاينة التغييرات</button>
+        <button id="applyBtn" type="button">حفظ وتطبيق على هذا الجهاز</button>
         <button id="exportBtn" type="button">تنزيل إعدادات التصميم</button>
         <button id="resetBtn" class="secondary" type="button">استعادة الألوان المتفق عليها</button>
       </div>
       <div id="status" class="status" role="status" aria-live="polite"></div>
-      <p class="note">تنزيل الإعدادات لا ينشرها تلقائياً. كما أن كتابة مسار الصورة لا ترفع الصورة؛ يجب أن يكون الملف موجوداً مسبقاً في المسار نفسه داخل المشروع.</p>
+      <p class="note">زر «حفظ وتطبيق» يحفظ الألوان في هذا المتصفح لتظهر عند فتح المتجر من الجهاز نفسه. لا يغيّر الموقع عند الزوار الآخرين ولا ينشر على الإنترنت. لتنفيذ تغيير عام على الموقع، نزّلي ملف الإعدادات ثم نطبّق القيم على ملفات المتجر. كما أن كتابة مسار الصورة لا ترفع الصورة؛ يجب أن يكون الملف موجوداً مسبقاً داخل المشروع.</p>
     </section>
     <section class="panel">
       <h2>معاينة مباشرة</h2>
@@ -117,6 +118,8 @@ for(const id of colorIds){
   hex.addEventListener('blur',()=>{if(validHex(hex.value)){hex.value=hex.value.trim().toUpperCase();picker.value=hex.value;hex.classList.remove('invalid');preview();}});
 }
 byId('previewBtn').addEventListener('click',preview);
+byId('applyBtn').addEventListener('click',()=>{if(!preview())return;const data={buttonColor:byId('buttonColorHex').value.trim().toUpperCase(),titleColor:byId('titleColorHex').value.trim().toUpperCase(),backgroundColor:byId('backgroundColorHex').value.trim().toUpperCase(),cardColor:byId('cardColorHex').value.trim().toUpperCase()};try{localStorage.setItem('luneraDesignSettings',JSON.stringify(data));setStatus('تم حفظ الألوان وتطبيقها على المتجر في هذا الجهاز والمتصفح.');}catch(e){setStatus('تعذّر الحفظ في المتصفح. استخدمي زر تنزيل إعدادات التصميم.');}});
+try{const saved=JSON.parse(localStorage.getItem('luneraDesignSettings')||'null');if(saved){for(const id of colorIds){if(validHex(saved[id])){byId(id).value=saved[id];byId(id+'Hex').value=saved[id];}}}}catch(e){}
 byId('resetBtn').addEventListener('click',()=>{
   for(const id of colorIds){byId(id).value=defaults[id];byId(id+'Hex').value=defaults[id];byId(id+'Hex').classList.remove('invalid');}
   byId('heroImage').value='hero.jpg.jpg';
