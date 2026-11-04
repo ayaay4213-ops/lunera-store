@@ -624,3 +624,26 @@ footer small{font-size:9px!important}
   max-width:310px!important;
  }
 }
+
+
+/* LUNÉRA: reduce Temu panel height */
+.preorder-feature{
+ padding-top:6px!important;
+ padding-bottom:6px!important;
+ margin-top:5px!important;
+ margin-bottom:7px!important;
+}
+.preorder-topline{margin-bottom:0!important;line-height:1.1!important}
+.preorder-kicker{line-height:1.15!important;margin:0!important}
+.preorder-feature h2{margin:1px 0!important;line-height:1.2!important}
+.preorder-feature>p{margin:1px auto 2px!important;line-height:1.25!important}
+.preorder-steps{margin:2px auto 3px!important;gap:3px!important}
+.preorder-steps span{padding-top:3px!important;padding-bottom:3px!important;line-height:1.15!important}
+.preorder-feature>small{line-height:1.2!important;margin-top:0!important}
+@media(max-width:600px){
+ .preorder-feature{padding-top:5px!important;padding-bottom:5px!important;margin-top:4px!important;margin-bottom:6px!important}
+ .preorder-feature>p{line-height:1.2!important;margin:1px auto!important}
+ .preorder-steps{margin:1px auto 2px!important;gap:2px!important}
+ .preorder-steps span{padding-top:2px!important;padding-bottom:2px!important}
+ .preorder-feature>small{line-height:1.15!important}
+}
