@@ -1,47 +1,139 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>تصميم LUNÉRA</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><style>body{background:#f4eee4;color:#211f1b}.wrap{max-width:950px;margin:25px auto;padding:16px}.panel{background:#fff;border:1px solid #dfd2bf;border-radius:16px;padding:18px;margin:15px 0}.panel label{display:block;font-weight:700;margin:12px 0 5px}.panel input{width:100%;padding:10px;border:1px solid #d8c9ae;border-radius:8px;font:inherit}.preview{border-radius:16px;overflow:hidden;background:#f4eee4;border:1px solid #b8914e;padding:20px;text-align:center}.preview h2{color:var(--title-color,#211f1b)}.preview .sample{background:var(--card-bg,#211f1b);color:#f4eee4;padding:22px;border-radius:12px;margin:12px auto;max-width:300px}.btns{display:flex;gap:8px;flex-wrap:wrap}.note{font-size:13px;line-height:1.9;color:#6e6251}</style></head><body><header class="topbar"><a class="brand" href="dashboard.html">♛ LUNÉRA<small>تصميم الواجهة</small></a><a href="index.html" style="color:white">عرض المتجر</a></header><main class="wrap"><h1>تخصيص واجهة لونيرا</h1><p class="note">اختاري الألوان والصور ثم عايني النتيجة. عند التصدير سينزل ملف site-settings.json.</p><section class="panel"><label>لون الأزرار والإطارات</label><input id="buttonColor" type="color" value="#b8914e"><label>لون العناوين</label><input id="titleColor" type="color" value="#211f1b"><label>لون خلفية المتجر</label><input id="backgroundColor" type="color" value="#f4eee4"><label>لون خلفية البطاقات</label><input id="cardColor" type="color" value="#211f1b"><label>اختيار صورة الواجهة من الهاتف</label><input id="heroFile" type="file" accept="image/jpeg,image/png,image/webp"><label>مسار صورة الواجهة داخل الموقع</label><input id="heroImage" placeholder="مثال: hero.jpg"><label>اختيار صورة الخلفية من الهاتف (اختياري)</label><input id="backgroundFile" type="file" accept="image/jpeg,image/png,image/webp"><label>مسار صورة الخلفية داخل الموقع</label><input id="backgroundImage" placeholder="مثال: background.jpg"><p class="note">اختاري الصور من هاتفك ثم نزّلي كل صورة بزرها. ارفعي الصور المنزّلة إلى GitHub في نفس المسارات المكتوبة.</p><div class="btns"><button class="gold-btn" id="downloadHero" type="button">تنزيل صورة الواجهة</button><button class="gold-btn" id="downloadBackground" type="button">تنزيل صورة الخلفية</button></div><div class="btns"><button class="gold-btn" id="previewBtn">معاينة التغييرات</button><button class="gold-btn" id="exportBtn">تنزيل إعدادات التصميم</button><button class="gold-btn" id="resetBtn">استعادة الألوان الأصلية</button></div></section><section class="panel"><h2>معاينة مباشرة</h2><div class="preview" id="preview"><div style="font-weight:800;color:#b8914e">♛ LUNÉRA</div><h2>جمالك يبدأ من لونيرا</h2><p>أناقتكِ في التفاصيل</p><div class="sample">بطاقة منتج تجريبية</div><span class="gold-btn">اكتشفي مجموعتنا</span></div></section><p class="note">مهم: كتابة مسار الصورة لا ترفع الصورة تلقائيًا. ارفعي الصورة إلى مستودع GitHub أولًا، ثم اكتبي اسمها ومسارها هنا.</p></main><script>
-const $=id=>document.getElementById(id);
-function preview(){const p=$('preview');p.style.background=$('backgroundColor').value;p.querySelector('h2').style.color=$('titleColor').value;p.querySelector('.sample').style.background=$('cardColor').value;const b=p.querySelector('.gold-btn');b.style.background=$('buttonColor').value;b.style.color='#211b12'}
-$('previewBtn').onclick=()=>preview();
-const imageFiles={hero:null,background:null};
-function readImage(file,key,inputId,pathId){
- if(!file)return;
- if(!/^image\\/(jpeg|png|webp)$/.test(file.type)){alert('اختاري صورة JPG أو PNG أو WebP.');return;}
- if(file.size>8*1024*1024){alert('حجم الصورة يجب ألا يتجاوز 8 ميغابايت.');return;}
- imageFiles[key]=file;
- $(pathId).value=file.name;
- const reader=new FileReader();
- reader.onload=()=>{let p=$('preview'),sel=key==='hero'?'.hero-preview':'.background-preview',img=p.querySelector(sel);
- if(!img){img=document.createElement('img');img.className=sel.slice(1);img.style.cssText='display:block;width:100%;max-height:170px;object-fit:contain;margin:10px auto;border-radius:10px';if(key==='hero')p.insertBefore(img,p.querySelector('h2'));else p.appendChild(img);}
- img.src=reader.result;
- };
- reader.readAsDataURL(file);
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#F6D7BA">
+<title>إعدادات تصميم LUNÉRA</title>
+<style>
+:root{--champagne:#F6D7BA;--gold:#C7A45D;--blue:#071A3D;--ink:#243047;--white:#fffdf9;--line:#e8d8c4}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(145deg,#fbefe4,#f6d7ba);color:var(--blue);font-family:Tahoma,Arial,sans-serif}
+header{background:var(--blue);color:white;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-size:22px;font-weight:bold;letter-spacing:1px}
+nav a{color:white;text-decoration:none;margin-inline-start:14px;font-size:14px}
+main{width:min(100% - 28px,980px);margin:26px auto 48px}
+h1{font-size:clamp(24px,4vw,34px);margin:0 0 8px}
+.lead{color:#596276;line-height:1.8;margin:0 0 20px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.9fr);gap:18px;align-items:start}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 10px 28px #5b45200d}
+.panel h2{font-size:19px;margin:0 0 16px}
+.field{margin:0 0 17px}
+.field label{display:block;font-weight:bold;margin-bottom:7px}
+.color-row{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;align-items:center}
+input[type=color]{width:70px;height:48px;border:1px solid var(--line);border-radius:10px;padding:4px;background:white;cursor:pointer}
+input[type=text]{width:100%;min-width:0;padding:12px;border:1px solid #d9cbb8;border-radius:10px;background:white;color:var(--blue);font:600 15px Tahoma,Arial,sans-serif}
+.hex{direction:ltr;text-align:left;font-family:monospace!important}
+.invalid{border-color:#c0392b!important;background:#fff3f1!important}
+.hint{font-size:12px;color:#6e7280;margin-top:6px;line-height:1.7}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+button,.button-link{border:0;border-radius:11px;padding:12px 16px;background:var(--gold);color:var(--blue);font-weight:bold;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+button.secondary,.button-link.secondary{background:#f1e6d8;border:1px solid var(--line)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #4973b9;outline-offset:2px}
+.preview{border:2px solid var(--gold);border-radius:16px;padding:18px;background:var(--champagne);text-align:center;overflow:hidden;min-height:290px;background-size:cover;background-position:center}
+.preview .logo{font:700 25px Georgia,serif;letter-spacing:1px;color:var(--gold)}
+.preview h3{font-size:23px;margin:16px 0 6px}
+.preview p{margin:0 0 16px}
+.preview-card{max-width:290px;margin:14px auto;padding:22px;border-radius:13px;background:var(--champagne);color:var(--blue);border:1px solid var(--gold)}
+.preview-button{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--gold);color:var(--blue);font-weight:bold}
+.preview-image{display:block;width:100%;max-height:155px;object-fit:contain;margin:8px auto;border-radius:10px}
+.status{min-height:22px;font-size:13px;color:#35634a;margin-top:10px}
+.note{margin-top:18px;font-size:13px;color:#656b78;line-height:1.8}
+@media(max-width:720px){.layout{grid-template-columns:1fr}header{padding:14px 18px}.panel{padding:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">♛ LUNÉRA <span style="font:12px Tahoma,Arial;display:block;letter-spacing:0">إدارة المتجر</span></div>
+  <nav><a href="dashboard.html">لوحة التحكم</a><a href="index.html">عرض المتجر</a><a href="admin.html">إدارة المنتجات</a></nav>
+</header>
+<main>
+  <h1>إعدادات تصميم لونيرا</h1>
+  <p class="lead">عدّلي الألوان بكتابة الكود أو باستخدام لوحة اختيار اللون. شاهدي المعاينة قبل تنزيل ملف الإعدادات.</p>
+  <div class="layout">
+    <section class="panel" aria-labelledby="colors-title">
+      <h2 id="colors-title">الألوان الرئيسية</h2>
+      <div class="field"><label for="buttonColorHex">لون الأزرار والإطارات</label><div class="color-row"><input id="buttonColor" type="color" value="#C7A45D" aria-label="اختيار لون الأزرار"><input id="buttonColorHex" class="hex" type="text" value="#C7A45D" maxlength="7" autocomplete="off" spellcheck="false"></div></div>
+      <div class="field"><label for="titleColorHex">لون العناوين</label><div class="color-row"><input id="titleColor" type="color" value="#071A3D" aria-label="اختيار لون العناوين"><input id="titleColorHex" class="hex" type="text" value="#071A3D" maxlength="7" autocomplete="off" spellcheck="false"></div></div>
+      <div class="field"><label for="backgroundColorHex">لون خلفية المتجر</label><div class="color-row"><input id="backgroundColor" type="color" value="#F6D7BA" aria-label="اختيار خلفية المتجر"><input id="backgroundColorHex" class="hex" type="text" value="#F6D7BA" maxlength="7" autocomplete="off" spellcheck="false"></div></div>
+      <div class="field"><label for="cardColorHex">لون خلفية البطاقات</label><div class="color-row"><input id="cardColor" type="color" value="#F6D7BA" aria-label="اختيار خلفية البطاقات"><input id="cardColorHex" class="hex" type="text" value="#F6D7BA" maxlength="7" autocomplete="off" spellcheck="false"></div></div>
+      <h2 style="margin-top:22px">مسارات الصور الموجودة بالموقع</h2>
+      <div class="field"><label for="heroImage">صورة الواجهة</label><input id="heroImage" type="text" value="hero.jpg.jpg" placeholder="مثال: assets/01-homepage.jpg.png"><div class="hint">اكتبي المسار كما يظهر تماماً في ملفات المشروع.</div></div>
+      <div class="field"><label for="backgroundImage">صورة الخلفية الضبابية (اختياري)</label><input id="backgroundImage" type="text" value="background.jpg.png" placeholder="مثال: assets/07-store-background-blur.jpg.png"></div>
+      <div class="actions">
+        <button id="previewBtn" type="button">معاينة التغييرات</button>
+        <button id="applyBtn" type="button">حفظ وتطبيق على هذا الجهاز</button>
+        <button id="exportBtn" type="button">تنزيل إعدادات التصميم</button>
+        <button id="resetBtn" class="secondary" type="button">استعادة الألوان المتفق عليها</button>
+      </div>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <p class="note">زر «حفظ وتطبيق» يحفظ الألوان في هذا المتصفح لتظهر عند فتح المتجر من الجهاز نفسه. لا يغيّر الموقع عند الزوار الآخرين ولا ينشر على الإنترنت. لتنفيذ تغيير عام على الموقع، نزّلي ملف الإعدادات ثم نطبّق القيم على ملفات المتجر. كما أن كتابة مسار الصورة لا ترفع الصورة؛ يجب أن يكون الملف موجوداً مسبقاً داخل المشروع.</p>
+    </section>
+    <section class="panel">
+      <h2>معاينة مباشرة</h2>
+      <div id="preview" class="preview">
+        <div class="logo">♛ LUNÉRA</div>
+        <img id="heroPreview" class="preview-image" alt="معاينة صورة الواجهة" hidden>
+        <h3 id="previewTitle">جمالك يبدأ من لونيرا</h3>
+        <p>أناقتكِ في التفاصيل</p>
+        <div id="previewCard" class="preview-card">بطاقة منتج تجريبية</div>
+        <span id="previewButton" class="preview-button">اكتشفي مجموعتنا</span>
+      </div>
+    </section>
+  </div>
+</main>
+<script>
+'use strict';
+const byId = id => document.getElementById(id);
+const colorIds = ['buttonColor','titleColor','backgroundColor','cardColor'];
+const defaults = {buttonColor:'#C7A45D',titleColor:'#071A3D',backgroundColor:'#F6D7BA',cardColor:'#F6D7BA'};
+function validHex(value){return /^#[0-9a-fA-F]{6}$/.test(value.trim());}
+function setStatus(message){byId('status').textContent=message;}
+function preview(){
+  const values={};
+  for(const id of colorIds){
+    const value=byId(id+'Hex').value.trim();
+    if(!validHex(value)){byId(id+'Hex').classList.add('invalid');setStatus('راجعي كود اللون المحدد؛ يجب أن يكون مثل #C7A45D.');return false;}
+    values[id]=value.toUpperCase();
+  }
+  const panel=byId('preview');
+  panel.style.backgroundColor=values.backgroundColor;
+  panel.style.borderColor=values.buttonColor;
+  byId('previewTitle').style.color=values.titleColor;
+  byId('previewCard').style.backgroundColor=values.cardColor;
+  byId('previewCard').style.borderColor=values.buttonColor;
+  byId('previewButton').style.backgroundColor=values.buttonColor;
+  byId('previewButton').style.color=values.titleColor;
+  const imagePath=byId('heroImage').value.trim();
+  const image=byId('heroPreview');
+  if(imagePath){image.src=imagePath;image.hidden=false;}else{image.removeAttribute('src');image.hidden=true;}
+  const backgroundPath=byId('backgroundImage').value.trim();
+  panel.style.backgroundImage=backgroundPath?'linear-gradient(#ffffff20,#ffffff20),url("'+backgroundPath.replace(/["\\]/g,'')+'")':'none';
+  setStatus('تم تحديث المعاينة.');return true;
 }
-$('heroFile').addEventListener('change',e=>readImage(e.target.files[0],'hero','heroFile','heroImage'));
-$('backgroundFile').addEventListener('change',e=>readImage(e.target.files[0],'background','backgroundFile','backgroundImage'));
-function downloadImage(key){const f=imageFiles[key];if(!f){alert('اختاري الصورة أولًا.');return;}const u=URL.createObjectURL(f),a=document.createElement('a');a.href=u;a.download=$(key==='hero'?'heroImage':'backgroundImage').value.trim()||f.name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
-$('downloadHero').onclick=()=>downloadImage('hero');
-$('downloadBackground').onclick=()=>downloadImage('background');
-
-$('exportBtn').onclick=()=>{const data={buttonColor:$('buttonColor').value,titleColor:$('titleColor').value,backgroundColor:$('backgroundColor').value,cardColor:$('cardColor').value,heroImage:$('heroImage').value.trim(),backgroundImage:$('backgroundImage').value.trim()};const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));a.download='site-settings.json';a.click();URL.revokeObjectURL(a.href)};
-$('resetBtn').onclick=()=>{[['buttonColor','#b8914e'],['titleColor','#211f1b'],['backgroundColor','#f4eee4'],['cardColor','#211f1b']].forEach(([id,v])=>$(id).value=v);$('heroImage').value='';$('backgroundImage').value='';preview()};preview();
-
-// إظهار معاينة الصور والألوان على مساحة المعاينة
-const originalPreview=preview;
-preview=function(){
- originalPreview();
- const p=$('preview');
- const heroPath=$('heroImage').value.trim();
- const bgPath=$('backgroundImage').value.trim();
- p.style.backgroundImage=bgPath?'url("'+bgPath+'")':'none';
- p.style.backgroundSize='cover';
- p.style.backgroundPosition='center';
- p.style.borderColor=$('buttonColor').value;
- p.querySelector('div').style.color=$('buttonColor').value;
- let img=p.querySelector('.hero-preview');
- if(heroPath){
-  if(!img){img=document.createElement('img');img.className='hero-preview';img.style.cssText='display:block;width:100%;max-height:170px;object-fit:contain;margin:10px auto;border-radius:10px';p.insertBefore(img,p.querySelector('h2'));}
-  img.src=heroPath;
- }else if(img){img.remove();}
+for(const id of colorIds){
+  const picker=byId(id),hex=byId(id+'Hex');
+  picker.addEventListener('input',()=>{hex.value=picker.value.toUpperCase();hex.classList.remove('invalid');preview();});
+  hex.addEventListener('input',()=>{const value=hex.value.trim();if(validHex(value)){picker.value=value;hex.classList.remove('invalid');preview();}else{hex.classList.add('invalid');setStatus('اكتبي كوداً صحيحاً مكوّناً من # وست خانات.');}});
+  hex.addEventListener('blur',()=>{if(validHex(hex.value)){hex.value=hex.value.trim().toUpperCase();picker.value=hex.value;hex.classList.remove('invalid');preview();}});
 }
-['buttonColor','titleColor','backgroundColor','cardColor','heroImage','backgroundImage'].forEach(id=>$(id).addEventListener('input',()=>preview())); $('previewBtn').onclick=()=>preview();
-</script></body></html>
+byId('previewBtn').addEventListener('click',preview);
+byId('applyBtn').addEventListener('click',()=>{if(!preview())return;const data={buttonColor:byId('buttonColorHex').value.trim().toUpperCase(),titleColor:byId('titleColorHex').value.trim().toUpperCase(),backgroundColor:byId('backgroundColorHex').value.trim().toUpperCase(),cardColor:byId('cardColorHex').value.trim().toUpperCase()};try{localStorage.setItem('luneraDesignSettings',JSON.stringify(data));setStatus('تم حفظ الألوان وتطبيقها على المتجر في هذا الجهاز والمتصفح.');}catch(e){setStatus('تعذّر الحفظ في المتصفح. استخدمي زر تنزيل إعدادات التصميم.');}});
+try{const saved=JSON.parse(localStorage.getItem('luneraDesignSettings')||'null');if(saved){for(const id of colorIds){if(validHex(saved[id])){byId(id).value=saved[id];byId(id+'Hex').value=saved[id];}}}}catch(e){}
+byId('resetBtn').addEventListener('click',()=>{
+  for(const id of colorIds){byId(id).value=defaults[id];byId(id+'Hex').value=defaults[id];byId(id+'Hex').classList.remove('invalid');}
+  byId('heroImage').value='hero.jpg.jpg';
+  byId('backgroundImage').value='background.jpg.png';
+  preview();setStatus('تمت استعادة الألوان المتفق عليها.');
+});
+byId('exportBtn').addEventListener('click',()=>{
+  if(!preview())return;
+  const data={buttonColor:byId('buttonColorHex').value.trim().toUpperCase(),titleColor:byId('titleColorHex').value.trim().toUpperCase(),backgroundColor:byId('backgroundColorHex').value.trim().toUpperCase(),cardColor:byId('cardColorHex').value.trim().toUpperCase(),heroImage:byId('heroImage').value.trim(),backgroundImage:byId('backgroundImage').value.trim()};
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='site-settings.json';document.body.appendChild(link);link.click();link.remove();URL.revokeObjectURL(url);
+  setStatus('تم تنزيل site-settings.json. لم يتم نشر أي تغيير على المتجر.');
+});
+preview();
+</script>
+</body>
+</html>
