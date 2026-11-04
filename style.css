@@ -392,3 +392,84 @@ footer{border-top:1px solid var(--lunera-gold)}
 .category small{color:#425574!important}
 /* Champagne backgrounds for the store's written content panels */
 .section-head h2,.section-head p{color:#071A3D!important}
+
+
+/* LUNÉRA final agreed palette — visual-only overrides */
+:root{
+  --lunera-royal:#071A3D;
+  --lunera-champagne:#F6D7BA;
+  --lunera-gold:#C7A45D;
+}
+/* Keep the new royal-blue hero artwork fully visible and untouched */
+.hero{background:transparent!important;overflow:hidden}
+.hero>img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  filter:none!important;
+  opacity:1!important;
+}
+.hero-shade{display:none!important;background:none!important;opacity:0!important}
+/* Champagne writing panel over the hero image */
+.hero-copy{
+  background:#F6D7BA!important;
+  color:#071A3D!important;
+  border:1px solid #C7A45D!important;
+  border-radius:16px!important;
+  box-shadow:0 8px 24px rgba(7,26,61,.12)!important;
+  text-shadow:none!important;
+  backdrop-filter:none!important;
+}
+.hero-copy .eyebrow,.hero-copy h1,.hero-copy p,
+.hero-copy h1 em{color:#071A3D!important;text-shadow:none!important}
+/* Champagne category cards and frames; category artwork remains unfiltered */
+.category{
+  background:#F6D7BA!important;
+  color:#071A3D!important;
+  border:1px solid #C7A45D!important;
+  border-radius:18px!important;
+  padding:10px 10px 14px!important;
+  box-shadow:0 8px 22px rgba(7,26,61,.10)!important;
+  overflow:hidden!important;
+}
+.cat-art{
+  background:#F6D7BA!important;
+  border:1px solid rgba(199,164,93,.65)!important;
+  border-radius:12px!important;
+  overflow:hidden!important;
+  height:auto!important;
+  aspect-ratio:4/3!important;
+}
+.category .cat-art img,.cat-art img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:transparent!important;
+  filter:none!important;
+  opacity:1!important;
+  mix-blend-mode:normal!important;
+}
+.category strong{color:#071A3D!important}
+.category small{color:#425574!important}
+/* Champagne text surfaces; keep the product catalogue and its behavior unchanged */
+#categories .section-head>div{
+  background:#F6D7BA!important;
+  border:1px solid rgba(199,164,93,.7)!important;
+  border-radius:14px!important;
+  padding:10px 16px!important;
+}
+#categories .section-head h2,
+#categories .section-head p{color:#071A3D!important}
+@media(max-width:760px){
+  .hero-copy{right:3%!important;left:3%!important;bottom:12px!important;top:auto!important;max-width:82%!important;padding:8px 11px!important}
+  .hero-copy h1{font-size:18px!important}
+  .hero-copy h1 em{font-size:22px!important}
+  .hero-copy p{font-size:11px!important;line-height:1.5!important}
+  .category{padding:8px 8px 11px!important;min-height:0!important}
+  .cat-art{aspect-ratio:4/3!important;height:auto!important}
+}
