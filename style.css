@@ -303,3 +303,75 @@ body:before{
 
 /* LUNÉRA supplied category artwork layout */
 @media(min-width:761px){.category-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+
+/* LUNÉRA approved royal-blue layout: champagne only in compact details */
+:root{
+ --lunera-button:#C7A45D;
+ --lunera-title:#071A3D;
+ --lunera-background:#071A3D;
+ --lunera-card:#F9E4D1;
+}
+html,body{background:#071A3D!important;color:#fff!important}
+body:before{
+ background-color:#071A3D!important;
+ background-image:var(--lunera-background-image,url('background.jpg.png'))!important;
+ opacity:.38!important;filter:blur(4px)!important;
+}
+.topbar,footer,.promise{background:rgba(5,19,52,.97)!important;color:#fff!important;border-color:#C7A45D!important}
+.brand,.brand small,.crown,.footer-brand{color:#C7A45D!important}
+.section{background:transparent!important}
+#categories .section-head h2,.section-head h2,.collection-heading h2{color:#fff!important}
+#categories .section-head p,.section-head p{color:#f4e8d9!important}
+.category{
+ background:linear-gradient(150deg,#102b60,#071a3d)!important;
+ color:#fff!important;border:1px solid rgba(199,164,93,.85)!important;
+ box-shadow:0 9px 24px rgba(0,0,0,.28)!important;
+ padding:8px!important;border-radius:16px!important;min-height:0!important;
+}
+.cat-art{
+ background:#071a3d!important;border-radius:11px!important;
+ margin-bottom:7px!important;aspect-ratio:4/3!important;
+}
+.cat-art img{background:transparent!important;object-fit:cover!important}
+.category strong{
+ display:inline-block!important;width:auto!important;
+ background:#F9E4D1!important;color:#071A3D!important;
+ border-radius:7px!important;padding:4px 9px!important;
+ font-size:12px!important;line-height:1.5!important;
+}
+.category small{color:#f4e8d9!important;font-size:9px!important;margin-top:3px!important}
+.category-grid{gap:12px!important}
+.product-card{
+ background:linear-gradient(155deg,#102b60,#071a3d)!important;
+ color:#fff!important;border:1px solid rgba(199,164,93,.75)!important;
+}
+.product-card>img{background:#0a204b!important}
+.product-info h3,.product-info p,.product-info .price,.price,.variant-label{color:#fff!important}
+.product-info{background:rgba(249,228,209,.10)!important}
+.product-order-note{background:#F9E4D1!important;color:#071A3D!important}
+.preorder-feature{
+ background:linear-gradient(145deg,rgba(16,43,96,.98),rgba(7,26,61,.98))!important;
+ color:#fff!important;border:1px solid #C7A45D!important;
+ box-shadow:0 10px 28px rgba(0,0,0,.28)!important;
+}
+.preorder-brand,.temu-wordmark,.preorder-kicker,.preorder-feature h2,
+.preorder-feature>p,.preorder-feature>small,.preorder-steps span{color:#fff!important}
+.preorder-feature h2 em{color:#e7c987!important}
+.preorder-steps span{background:rgba(249,228,209,.08)!important;border-color:rgba(199,164,93,.65)!important}
+.preorder-steps span b{background:#F9E4D1!important;color:#071A3D!important}
+.contact{background:linear-gradient(145deg,#102b60,#071a3d)!important;border:1px solid #C7A45D!important}
+.contact h2,.contact p{color:#fff!important}
+.cart-panel{background:#071A3D!important;color:#fff!important}
+.cart-head h3,.cart-line,.cart-total,.muted,.cart-line button{color:#fff!important}
+.cart-line{border-color:rgba(199,164,93,.35)!important}
+.cart-total{border-color:#C7A45D!important}
+.section-head select,#checkoutForm input,#checkoutForm select,#checkoutForm textarea{
+ background:#F9E4D1!important;color:#071A3D!important;border-color:#C7A45D!important;
+}
+@media(max-width:600px){
+ .category{padding:6px!important}
+ .cat-art{aspect-ratio:4/3!important}
+ .category strong{font-size:11px!important;padding:3px 7px!important}
+ .category small{font-size:8px!important}
+}
