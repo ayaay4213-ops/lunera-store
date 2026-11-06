@@ -138,3 +138,38 @@ footer{background:#0b1d39!important;color:#f1eadc!important;border-top:1px solid
   .cart-btn{padding:6px 8px;font-size:10px}
   .category-grid,.product-grid{gap:9px!important}
 }
+
+/* LUNÉRA second pass — richer royal palette and larger product photography */
+html,body{background:#071a3d!important;color:#f4ead8!important}
+body:before{background:#071a3d!important}
+.hero{background:#071a3d!important}
+.section{background:#071a3d!important}
+.section:nth-of-type(even){background:#0b2148!important}
+.section-head h2,.section-head p{color:#f3e7d0!important}
+.eyebrow{color:#d3b477!important}
+.preorder-feature{background:linear-gradient(135deg,#10284a,#071a3d)!important;color:#f4ead8!important;border-color:#c7a45d!important}
+.preorder-brand,.preorder-feature h2{color:#f5e8cf!important}
+.preorder-feature>p,.preorder-feature small{color:#dfd2bc!important}
+.preorder-kicker,.preorder-divider{color:#d5b675!important}
+.preorder-steps span{background:#132d53!important;color:#f4ead8!important;border-color:#b9975b!important}
+.category{background:#10284a!important;border-color:rgba(199,164,93,.55)!important;color:#f4ead8!important}
+.category strong{color:#f5e8cf!important}
+.category small{color:#d4c19c!important}
+.cat-art,.cat-art img{background:#e9dfce!important}
+.product-card{background:#10284a!important;border-color:rgba(199,164,93,.55)!important;box-shadow:0 10px 28px rgba(0,0,0,.2)!important}
+.product-card>img{background:#e9dfce!important;object-fit:contain!important}
+.product-info h3{color:#f5e8cf!important}
+.product-info p{color:#e0d3bd!important}
+.product-actions{border-color:rgba(199,164,93,.28)!important}
+.variant-label{color:#e5d8c2!important}
+.variant-select{background:#f5efe5!important;color:#10284a!important}
+.gift-special-note{background:#10284a!important;color:#f0e4cf!important;border-color:#b9975b!important}
+.gift-special-note strong{color:#e2c58e!important}
+.back-categories{background:#10284a!important;color:#f5e8cf!important;border-color:#b9975b!important}
+@media(max-width:760px){
+  .product-grid{grid-template-columns:minmax(0,1fr)!important;gap:18px!important}
+  .product-card>img{width:100%!important;aspect-ratio:5/4!important;max-height:360px!important;object-fit:contain!important;padding:8px!important}
+  .product-info{padding:14px 16px!important}
+  .product-info h3{font-size:15px!important}
+  .product-info p{font-size:12px!important}
+}
