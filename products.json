@@ -451,7 +451,7 @@
     "category": "الهدايا",
     "price": null,
     "description": "عودة إلى سحر الزمن الجميل! تصميم غرامافون كلاسيكي يجمع بين الأحمر الملكي والذهبي، ليضيف لمسة من الأناقة والحنين إلى ديكوركِ. هدية صغيرة بتفاصيل تلفت الأنظار.",
-    "image": "https://i.ibb.co/0yrXHr3S/08-gifts-jpg.png",
+    "image": "gifts/gift-02-gramophone.jpg.png",
     "variants": []
   },
   {
@@ -460,7 +460,7 @@
     "category": "الهدايا",
     "price": null,
     "description": "تحفة مستوحاة من مشغلات الأسطوانات القديمة، بتفاصيل ذهبية ولمسات حمراء أنيقة. قطعة تجمع بين سحر الماضي وفخامة الحاضر، مثالية لعشاق الطراز الكلاسيكي.",
-    "image": "https://i.ibb.co/0yrXHr3S/08-gifts-jpg.png",
+    "image": "gifts/gift-03-vintage-player.jpg.png",
     "variants": []
   },
   {
@@ -469,7 +469,7 @@
     "category": "الهدايا",
     "price": null,
     "description": "سحر الزمن الجميل في صناديق بتصميم عتيق وتفاصيل أنيقة. مثالية لحفظ مقتنياتكِ الصغيرة أو لتزيين ركنكِ المفضل، وهدية رقيقة لمحبات القطع الكلاسيكية.",
-    "image": "https://i.ibb.co/0yrXHr3S/08-gifts-jpg.png",
+    "image": "gifts/gift-04-antique-boxes.jpg.png",
     "variants": []
   },
   {
@@ -478,7 +478,7 @@
     "category": "الهدايا",
     "price": null,
     "description": "قطعة مستوحاة من أناقة الماضي وجمال الحرف اليدوية، بتصميم ماكينة خياطة كلاسيكية وتفاصيل جذابة. اختيار فريد لمحبات الطراز القديم والديكورات المميزة.",
-    "image": "https://i.ibb.co/0yrXHr3S/08-gifts-jpg.png",
+    "image": "gifts/gift-05-sewing-machine.jpg.png",
     "variants": []
   },
   {
@@ -487,7 +487,7 @@
     "category": "الهدايا",
     "price": null,
     "description": "سحر الموسيقى يلتقي برقة الباليه! كمان موسيقي بتصميم أنثوي راقٍ، ترافقه راقصة باليه داخل علبة أنيقة. هدية حالمة تجمع بين جمال الفن ورومانسية التفاصيل، وتستحق أن تُقدَّم بطريقة ملكية.",
-    "image": "https://i.ibb.co/0yrXHr3S/08-gifts-jpg.png",
+    "image": "gifts/gift-06-violin-dancer.jpg.png",
     "variants": [
       {
         "name": "الحجم",
