@@ -577,3 +577,22 @@ footer{background:#594C40!important;color:#F7F2E8!important;border-top:1px solid
  }
  #categories .category-grid .cat-art img{padding:3px!important}
 }
+
+
+/* LUNÉRA — subtle warm-grey storefront background, coordinated with the hero */
+html,body{
+ background:#E5E1DA!important;
+}
+body:before{display:none!important;background:none!important}
+.section,.section:nth-of-type(even){
+ background:#E5E1DA!important;
+}
+.topbar{
+ background:rgba(229,225,218,.97)!important;
+}
+.hero{
+ background:#E3D9CA!important;
+}
+#home .hero>img{
+ background:#E3D9CA!important;
+}
