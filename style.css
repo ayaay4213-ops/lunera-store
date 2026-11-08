@@ -133,3 +133,104 @@ html,body{background:#F0EBE3;color:#3B332D}
  .category-banners{grid-template-columns:repeat(2,minmax(0,1fr))!important}
  .category-banners>.category-wide{grid-column:1/-1!important}
 }
+
+
+/* LUNÉRA final storefront image/layout correction */
+.hero-banner{
+  width:100%;
+  max-width:1500px;
+  margin:0 auto;
+  height:auto!important;
+  max-height:none!important;
+  overflow:hidden;
+  background:#EAE0D4!important;
+}
+.hero-banner>img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+.coupon-strip{
+  width:calc(100% - 8%);
+  max-width:1380px;
+  margin:22px auto 8px!important;
+  padding:20px!important;
+  grid-template-columns:minmax(0,1.25fr) repeat(2,minmax(0,1fr))!important;
+  align-items:stretch!important;
+  overflow:visible!important;
+}
+.coupon-intro,.coupon-card{
+  min-width:0!important;
+  height:auto!important;
+  min-height:104px!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+.coupon-card{
+  padding:16px 18px!important;
+  justify-content:center!important;
+  white-space:normal!important;
+}
+.coupon-card strong,.coupon-card small{
+  display:block!important;
+  overflow:visible!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+}
+.category-banners{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  align-items:start!important;
+}
+.category-banners>.category{min-width:0!important}
+.category-banners>.category-wide{grid-column:1/-1!important}
+.category-banners>.category .cat-art{
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:570/320!important;
+  overflow:hidden!important;
+}
+.category-banners>.category .cat-art img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+.category-banners>.category-wide .cat-art{
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:auto!important;
+  overflow:visible!important;
+}
+.category-banners>.category-wide .cat-art img{
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+}
+@media(max-width:900px){
+  .category-banners{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:650px){
+  .hero-banner>img{height:auto!important;max-height:none!important;object-fit:contain!important}
+  .coupon-strip{
+    width:92%!important;
+    margin:12px auto 0!important;
+    padding:14px 12px!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:9px!important;
+  }
+  .coupon-intro{grid-column:1/-1!important}
+  .coupon-card{min-height:92px!important;padding:11px!important}
+  .category-banners{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .category-banners>.category-wide{grid-column:1/-1!important}
+  .category-banners>.category .cat-art{aspect-ratio:1/1.08!important}
+  .category-banners>.category-wide .cat-art{aspect-ratio:auto!important}
+  .category-banners>.category-wide .cat-art img{height:auto!important}
+}
