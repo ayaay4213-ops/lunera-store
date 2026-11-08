@@ -133,3 +133,11 @@ footer small{color:var(--muted)}
   .contact .gold-btn{margin-top:14px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Preserve existing store utility elements in the new palette */
+.promise-delivery{display:flex;flex-direction:column;align-items:center;gap:2px}
+.promise-delivery strong{font-size:13px;color:var(--ink);font-weight:700}
+.promise-cta{display:inline-flex;align-items:center;justify-content:center;padding:7px 14px;border-radius:22px;background:var(--gold);border:1px solid var(--gold);color:#fff!important;text-decoration:none;font-weight:700;font-size:11px;line-height:1.4;box-shadow:none;white-space:nowrap;transition:background .2s,transform .2s}
+.promise-cta:hover{background:#9F8059}
+.promise-cta:active{transform:scale(.97)}
