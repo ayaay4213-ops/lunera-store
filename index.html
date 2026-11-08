@@ -16,33 +16,20 @@
   <button class="cart-btn" id="openCart">حقيبتي <b id="cartCount">0</b></button>
 </header>
 <main id="home">
-<section class="hero">
-  <div class="hero-copy">
-    <span class="eyebrow">A LITTLE LUXURY, EVERY DAY</span>
-    <h1>تفاصيل صغيرة،<br><em>أناقة تبقى.</em></h1>
-    <p>مرحبًا بكِ في LUNÉRA؛ مساحة تجمع اختيارات جميلة للمرأة العصرية، من الحقائب والإكسسوارات إلى الجمال والهدايا.</p>
-    <a class="gold-btn" href="#categories">اكتشفي الأقسام <span>←</span></a>
-    <span class="hero-note">اختيارات منتقاة بعناية • طلبات خاصة من Temu</span>
-  </div>
-  <div class="hero-gallery" aria-label="لمحة من اختيارات LUNÉRA">
-    <div class="hero-photo hero-photo-main"><img src="hero.jpg.jpg" alt="اختيارات أنيقة من LUNÉRA"></div>
-    <div class="hero-photo hero-photo-top"><img src="accessories.jpg...png" alt="إكسسوارات أنيقة"></div>
-    <div class="hero-photo hero-photo-bottom"><img src="accessories.jpg.jpg" alt="تفاصيل من مجموعة LUNÉRA"></div>
-    <span class="gallery-stamp">LUNÉRA<br><small>CURATED WITH LOVE</small></span>
-  </div>
-</section>
-<div class="promise"><span>✧ اختيارات أنيقة</span><span>♡ طلبات خاصة من Temu</span><span>✧ خدمة للولايات الجزائرية</span></div>
+<section class="hero-banner" aria-label="واجهة LUNÉRA"><img src="https://i.ibb.co/3mbSy3ND/file-000000004c5481f4a9dcb3066d0fc762.png" alt="LUNÉRA - More than a store"><a class="hero-shop-link" href="#categories" aria-label="تسوّقي الآن">تسوّقي الآن</a></section>
+<section class="coupon-strip" aria-label="قسائم وعروض LUNÉRA"><div class="coupon-intro"><span class="eyebrow">SPECIAL FOR YOU</span><h2>قسائم وعروض LUNÉRA</h2><p>تابعي القسائم والعروض المتاحة واكتشفي اختياراتنا.</p></div><div class="coupon-card"><span>✧</span><strong>قسائم المتجر</strong><small>تعرّفي على القسائم المتاحة عند الطلب</small></div><div class="coupon-card"><span>♡</span><strong>عروض مختارة</strong><small>تابعي جديد العروض والاختيارات</small></div></section>
 <section class="section categories-section" id="categories">
   <div class="section-head"><div><span class="eyebrow">DISCOVER YOUR FAVORITES</span><h2>تسوّقي حسب القسم</h2></div><p>اختيارات جميلة تضيف لمستكِ الخاصة</p></div>
-  <div class="category-grid">
-    <button class="category" data-category="الحقائب"><div class="cat-art"><img src="accessories.jpg.jpg" alt="الحقائب"></div><span class="category-kicker">01 / BAGS</span><strong>الحقائب</strong><small>أناقة ترافقكِ كل يوم</small></button>
-    <button class="category" data-category="الإكسسوارات"><div class="cat-art"><img src="accessories.jpg...png" alt="الإكسسوارات"></div><span class="category-kicker">02 / ACCESSORIES</span><strong>الإكسسوارات</strong><small>تفاصيل تكمل إطلالتكِ</small></button>
-    <button class="category" data-category="الجمال والعناية"><div class="cat-art"><img src="accessories.jpg....jpg" alt="الجمال والعناية"></div><span class="category-kicker">03 / BEAUTY</span><strong>الجمال والعناية</strong><small>عناية ولمسات من الجمال</small></button>
-    <button class="category" data-category="الهدايا"><div class="cat-art"><img src="accessories.jpg.png" alt="الهدايا"></div><span class="category-kicker">04 / GIFTS</span><strong>الهدايا</strong><small>لفتات جميلة لمن تحبين</small></button>
+  <div class="category-grid category-banners">
+    <button class="category" data-category="الإكسسوارات"><div class="cat-art"><img src="https://i.ibb.co/6cHGXTdV/Picsart-26-11-08-15-51-07-631.jpg" alt="الإكسسوارات"></div></button>
+    <button class="category" data-category="الجمال والعناية"><div class="cat-art"><img src="https://i.ibb.co/hRt98vjc/Picsart-26-11-08-15-50-30-032.jpg" alt="الجمال والجمال والعناية"></div></button>
+    <button class="category" data-category="الهدايا"><div class="cat-art"><img src="https://i.ibb.co/CLy6m0S/Picsart-26-11-08-15-51-40-936.jpg" alt="الهدايا"></div></button>
+    <button class="category" data-category="الحقائب"><div class="cat-art"><img src="https://i.ibb.co/LXPQK1S2/Picsart-26-11-08-15-52-11-140.jpg" alt="الحقائب"></div></button>
+    <button class="category category-wide" data-category="الأدوات المدرسية"><div class="cat-art"><img src="https://i.ibb.co/TMfzV0S5/Picsart-26-11-08-15-52-43-314.jpg" alt="الأدوات المدرسية"></div></button>
   </div>
 </section>
 <section class="section products-section" id="products">
-  <div class="section-head products-head"><div><span class="eyebrow">THE LUNÉRA EDIT</span><h2>اختياراتنا المميزة</h2><p>تصفّحي المنتجات واختاري ما يعجبكِ</p></div><select id="filterCategory" aria-label="تصفية المنتجات"><option value="الكل">كل المنتجات</option><option>الحقائب</option><option>الإكسسوارات</option><option>الجمال والعناية</option><option>الهدايا</option><option>منتجات جديدة</option></select></div>
+  <div class="section-head products-head"><div><span class="eyebrow">THE LUNÉRA EDIT</span><h2>اختياراتنا المميزة</h2><p>تصفّحي المنتجات واختاري ما يعجبكِ</p></div><select id="filterCategory" aria-label="تصفية المنتجات"><option value="الكل">كل المنتجات</option><option>الحقائب</option><option>الإكسسوارات</option><option>الجمال والعناية</option><option>الهدايا</option><option>منتجات جديدة</option><option>الأدوات المدرسية</option></select></div>
   <div id="productGrid" class="product-grid"><div class="empty-state">قريبًا ستجدين هنا تشكيلتنا المختارة من LUNÉRA ♡</div></div>
 </section>
 <section class="about-section" id="about">
