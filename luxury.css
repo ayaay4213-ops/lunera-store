@@ -596,3 +596,13 @@ body:before{display:none!important;background:none!important}
 #home .hero>img{
  background:#E3D9CA!important;
 }
+
+
+/* LUNÉRA — user-approved soft grey background */
+html,body,
+.section,.section:nth-of-type(even){
+ background:#EBE8E3!important;
+}
+.topbar{
+ background:rgba(235,232,227,.97)!important;
+}
