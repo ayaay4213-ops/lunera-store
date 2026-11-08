@@ -54,3 +54,9 @@ footer{text-align:center;padding:35px 15px;background:#3b332d;color:#f7f4ef}foot
  .category-banners>.category .cat-art{aspect-ratio:1/1.08;min-height:0}
  .category-banners>.category-wide .cat-art{aspect-ratio:2.05/1;min-height:0}
 }
+
+
+/* LUNÉRA product photography: show the complete product image without cropping */
+.product-card{min-width:0;overflow:hidden}
+.product-card>img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;object-position:center;background:#fffdf9;padding:12px}
+@media(max-width:650px){.product-card>img{aspect-ratio:1/1; padding:8px}}
