@@ -383,3 +383,30 @@ footer small{color:#827565!important}
  .product-card .add-btn{font-size:9px!important;padding:6px 8px!important}
  .contact{background:#F2E8DC!important}
 }
+
+
+/* Final category layout: four primary categories together, study below */
+#categories .category-grid{
+ display:grid!important;
+ grid-template-columns:repeat(4,minmax(0,1fr))!important;
+ align-items:stretch!important;
+ gap:14px!important;
+}
+#categories .category-grid>.category{grid-column:auto!important;min-width:0!important}
+#categories .category-grid>.category-wide{grid-column:1/-1!important}
+#categories .category-grid .cat-art{height:220px!important;min-height:0!important}
+#categories .category-grid .category-wide .cat-art{height:190px!important}
+#categories .category-grid .cat-art img{width:100%!important;height:100%!important;object-fit:cover!important;display:block!important}
+#home .hero>img{
+ display:block!important;width:100%!important;height:auto!important;max-height:620px!important;
+ object-fit:cover!important;object-position:center 42%!important;
+ opacity:1!important;visibility:visible!important;animation:none!important;
+ transition:none!important;filter:none!important;
+}
+@media(max-width:760px){
+ #categories .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ #categories .category-grid>.category-wide{grid-column:1/-1!important}
+ #categories .category-grid .cat-art{height:155px!important}
+ #categories .category-grid .category-wide .cat-art{height:180px!important}
+ #home .hero>img{height:auto!important;max-height:none!important;object-fit:contain!important}
+}
