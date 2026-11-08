@@ -2,26 +2,46 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#F8F6F1"><meta name="description" content="LUNÉRA - الجمال، الهدايا والإكسسوارات">
+<meta name="theme-color" content="#f7f4ef">
+<meta name="description" content="LUNÉRA متجر مستقل يساعدكِ على اكتشاف وطلب اختيارات مميزة من Temu في الجمال والحقائب والإكسسوارات والهدايا.">
 <title>LUNÉRA | لونيرا</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261108b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=lunera-order-layout-live-01">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#home"><span class="crown">♛</span><span>LUNÉRA</span><small>لونيرا</small></a><nav><a href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">المنتجات</a><a href="#contact">تواصل معنا</a></nav><button class="cart-btn" id="openCart">حقيبتي <b id="cartCount">0</b></button></header>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="LUNÉRA الرئيسية"><span class="brand-mark">L</span><span class="brand-name">LUNÉRA</span><small>اختيارات تليق بكِ</small></a>
+  <nav aria-label="القائمة الرئيسية"><a href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">تسوّقي</a><a href="#about">عن لونيرا</a><a href="#contact">تواصل معنا</a></nav>
+  <button class="cart-btn" id="openCart">حقيبتي <b id="cartCount">0</b></button>
+</header>
 <main id="home">
-<section class="hero"><img src="images/lunera-hero.svg" alt="واجهة LUNÉRA الهادئة"/><div class="hero-shade"></div><div class="hero-copy"><span class="eyebrow">BEAUTY • GIFTS • ACCESSORIES</span><h1>جمالك يبدأ من <em>LUNÉRA</em></h1><p>متجرك الذي يجمع بين الأناقة والجمال واللمسات المميزة.</p><a class="gold-btn" href="#products">اكتشفي مجموعتنا <span>←</span></a></div></section>
-<div class="promise"><span>✧ منتجات مختارة بعناية</span><div class="promise-delivery"><span>♧ توصيل إلى 58 ولاية</span></div><span>♡ لأنك تستحقين الأفضل</span></div>
-<section class="section" id="categories"><div class="section-head"><div><span class="eyebrow">DISCOVER LUNÉRA</span><h2>تسوّقي حسب القسم</h2></div><p>اختاري القسم الذي تحبينه</p></div><div class="category-grid">
-<button class="category" data-category="الجمال والعناية"><div class="cat-art beauty"><img src="images/category-beauty.svg" alt="منتجات الجمال والعناية"></div><strong>الجمال والعناية</strong><small>اكتشفي منتجات الجمال</small></button>
-<button class="category" data-category="الإكسسوارات"><div class="cat-art accessories"><img src="images/category-accessories.svg" alt="الإكسسوارات"></div><strong>الإكسسوارات</strong><small>تفاصيل تكمل أناقتك</small></button>
-<button class="category" data-category="الهدايا"><div class="cat-art gifts"><img src="images/category-gifts.svg" alt="الهدايا"></div><strong>الهدايا</strong><small>لحظات تستحق الاحتفال</small></button>
-<button class="category" data-category="منتجات جديدة"><div class="cat-art new"><img src="images/category-new.svg" alt="منتجات جديدة"></div><strong>منتجات جديدة</strong><small>كوني أول من يكتشفها</small></button>
-</div></section>
-<section class="section products-section" id="products"><div class="section-head"><div><span class="eyebrow">OUR COLLECTION</span></div><select id="filterCategory" aria-label="تصفية المنتجات"><option value="الكل">كل المنتجات</option><option>الجمال والعناية</option><option>الإكسسوارات</option><option>الهدايا</option><option>منتجات جديدة</option></select></div><div id="productGrid" class="product-grid"><div class="empty-state">قريبًا ستجدين هنا تشكيلتنا المختارة من LUNÉRA ♡</div></div></section>
-<section class="contact" id="contact"><div><span class="eyebrow">WE ARE HERE FOR YOU</span><h2>يسعدنا تواصلك معنا</h2><p>للاستفسار عن المنتجات والطلبات، راسلينا عبر واتساب.</p></div><a id="contactWhatsApp" class="gold-btn" href="#">تواصلي عبر واتساب</a></section>
+<section class="hero-banner" aria-label="واجهة LUNÉRA"><img src="https://i.ibb.co/3mbSy3ND/file-000000004c5481f4a9dcb3066d0fc762.png" alt="LUNÉRA - More than a store"><a class="hero-shop-link" href="#categories" aria-label="تسوّقي الآن">تسوّقي الآن</a></section>
+<section class="coupon-strip" aria-label="قسائم وعروض LUNÉRA"><div class="coupon-intro"><span class="eyebrow">SPECIAL FOR YOU</span><h2>قسائم وعروض LUNÉRA</h2><p>تابعي القسائم والعروض المتاحة واكتشفي اختياراتنا.</p></div><div class="coupon-card"><span>✧</span><strong>قسائم المتجر</strong><small>تعرّفي على القسائم المتاحة عند الطلب</small></div><div class="coupon-card"><span>♡</span><strong>عروض مختارة</strong><small>تابعي جديد العروض والاختيارات</small></div></section>
+<section class="section categories-section" id="categories">
+  <div class="section-head"><div><span class="eyebrow">DISCOVER YOUR FAVORITES</span><h2>تسوّقي حسب القسم</h2></div><p>اختيارات جميلة تضيف لمستكِ الخاصة</p></div>
+  <div class="category-grid category-banners">
+    <button class="category" data-category="الإكسسوارات"><div class="cat-art"><img src="https://i.ibb.co/6cHGXTdV/Picsart-26-11-08-15-51-07-631.jpg" alt="الإكسسوارات"></div></button>
+    <button class="category" data-category="الجمال والعناية"><div class="cat-art"><img src="https://i.ibb.co/hRt98vjc/Picsart-26-11-08-15-50-30-032.jpg" alt="الجمال والجمال والعناية"></div></button>
+    <button class="category" data-category="الهدايا"><div class="cat-art"><img src="https://i.ibb.co/CLy6m0S/Picsart-26-11-08-15-51-40-936.jpg" alt="الهدايا"></div></button>
+    <button class="category" data-category="الحقائب"><div class="cat-art"><img src="https://i.ibb.co/LXPQK1S2/Picsart-26-11-08-15-52-11-140.jpg" alt="الحقائب"></div></button>
+    <button class="category category-wide" data-category="الأدوات المدرسية"><div class="cat-art"><img src="https://i.ibb.co/TMfzV0S5/Picsart-26-11-08-15-52-43-314.jpg" alt="الأدوات المدرسية"></div></button>
+  </div>
+</section>
+<section class="section products-section" id="products">
+  <div class="section-head products-head"><div><span class="eyebrow">THE LUNÉRA EDIT</span><h2>اختياراتنا المميزة</h2><p>تصفّحي المنتجات واختاري ما يعجبكِ</p></div><select id="filterCategory" aria-label="تصفية المنتجات"><option value="الكل">كل المنتجات</option><option>الحقائب</option><option>الإكسسوارات</option><option>الجمال والعناية</option><option>الهدايا</option><option>منتجات جديدة</option><option>الأدوات المدرسية</option></select></div>
+  <div id="productGrid" class="product-grid"><div class="empty-state">قريبًا ستجدين هنا تشكيلتنا المختارة من LUNÉRA ♡</div></div>
+</section>
+<section class="about-section" id="about">
+  <div class="about-copy"><span class="eyebrow">A NOTE ABOUT US</span><h2>عن LUNÉRA</h2><p>LUNÉRA متجر مستقل صُمّم ليقرّب إليكِ اختيارات تحبينها. نساعدكِ على اكتشاف منتجات متنوعة في الحقائب والإكسسوارات والجمال والهدايا، كما نستقبل طلباتكِ الخاصة من Temu ونتابع معكِ تفاصيلها بكل وضوح واهتمام.</p><p class="about-signature">اختيارات تحبينها، بتفاصيل نهتم بها.</p></div>
+</section>
+<section class="how-to-order" id="how-to-order">
+  <div class="order-copy"><span class="eyebrow">YOUR REQUEST, MADE SIMPLE</span><h2>منتج من Temu لفت انتباهكِ؟</h2><p>أرسلي لنا رابطه أو صورته، وسنساعدكِ في معرفة التفاصيل وترتيب طلبكِ. LUNÉRA متجر مستقل لخدمة اختيار وطلب المنتجات، وليست متجرًا رسميًا تابعًا لـ Temu.</p><a class="gold-btn" href="#contact">ابدئي طلبكِ</a></div>
+  <div class="order-steps"><div><b>01</b><span>أرسلي صورة المنتج أو رابطه</span></div><div><b>02</b><span>نؤكد معكِ التفاصيل والسعر</span></div><div><b>03</b><span>نرتّب الطلب ونتابع معكِ</span></div></div>
+</section>
+<section class="contact" id="contact"><div><span class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</span><h2>هل تبحثين عن شيء معين؟</h2><p>أرسلي لنا رابط المنتج أو صورته، وسنساعدكِ في طلبه والإجابة عن استفساراتكِ.</p></div><a id="contactWhatsApp" class="gold-btn" href="#">تواصلي عبر واتساب</a></section>
 </main>
-<footer><div class="footer-brand">♛ LUNÉRA</div><p>جمالك يبدأ من لونيرا ♡</p><small>© <span id="year"></span> LUNÉRA. جميع الحقوق محفوظة.</small></footer>
+<footer><div class="footer-brand">LUNÉRA</div><p>تفاصيل صغيرة، أناقة تبقى.</p><small>© <span id="year"></span> LUNÉRA. جميع الحقوق محفوظة.</small></footer>
 <div class="overlay" id="cartOverlay"><aside class="cart-panel"><div class="cart-head"><h3>حقيبة التسوق</h3><button id="closeCart" aria-label="إغلاق">×</button></div><div id="cartItems" class="cart-items"><p class="muted">حقيبتك فارغة حاليًا.</p></div><div class="cart-total"><span>المجموع</span><strong id="cartTotal">0 دج</strong></div><form id="checkoutForm"><input id="customerName" placeholder="الاسم الكامل" required><input id="customerPhone" placeholder="رقم الهاتف" inputmode="tel" required><select id="customerWilaya" required><option value="">اختاري الولاية</option></select><textarea id="customerAddress" placeholder="العنوان بالتفصيل" required></textarea><button class="gold-btn full" type="submit">إرسال الطلب عبر واتساب</button></form></aside></div>
 <script src="store.js"></script>
 </body></html>
