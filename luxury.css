@@ -472,3 +472,61 @@ footer{background:#3b332d!important;color:#f7f4ef!important;border-top:1px solid
  .category-grid,.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
  #home .hero>img{max-height:none!important;object-fit:contain!important}
 }
+
+
+/* LUNÉRA — balanced Celestique-inspired warm luxury palette */
+:root{
+ --lunera-ink:#594C40!important;
+ --lunera-navy:#594C40!important;
+ --lunera-gold:#CEA165!important;
+ --lunera-gold-soft:#D8BD91!important;
+ --lunera-cream:#E9E0D3!important;
+ --lunera-card:#F7F2E8!important;
+ --lunera-muted:#827565!important;
+ --ivory:#E9E0D3!important;
+ --cream:#E3D9CA!important;
+ --champagne:#D8C7AF!important;
+ --sand:#C6C0AE!important;
+ --gold:#CEA165!important;
+ --gold-light:#D8BD91!important;
+ --ink:#594C40!important;
+ --muted:#827565!important;
+ --line:#CFC2AE!important;
+ --white:#F7F2E8!important;
+}
+html,body{background:#E9E0D3!important;color:#594C40!important}
+body:before{display:none!important}
+.topbar{background:rgba(233,224,211,.98)!important;color:#594C40!important;border-bottom:1px solid #CFC2AE!important}
+.brand,.brand small,nav a,.section-head h2,.category strong,.product-info h3,.contact h2{color:#594C40!important}
+.brand small,.section-head p,.category small,.product-info p{color:#827565!important}
+.crown,.eyebrow,.price{color:#A77B43!important}
+nav a:hover{color:#A77B43!important}
+.cart-btn{background:#D8C7AF!important;color:#594C40!important;border:1px solid #CEA165!important}
+.cart-btn b{background:#594C40!important;color:#F7F2E8!important}
+.hero{background:#E3D9CA!important}
+#home .hero>img{background:#E3D9CA!important}
+.promise{background:#D8C7AF!important;color:#594C40!important;border-color:#C6B69E!important}
+.promise-cta,.gold-btn,.full{background:#CEA165!important;color:#fffaf1!important;border-color:#B8894D!important}
+.section,.section:nth-of-type(even){background:#E9E0D3!important}
+.category,.product-card{background:#F7F2E8!important;color:#594C40!important;border:1px solid #CFC2AE!important;box-shadow:0 7px 22px rgba(73,57,39,.09)!important}
+.cat-art,.cat-art img,.product-card>img{background:#E3D9CA!important}
+.category:hover{border-color:#CEA165!important}
+.product-card .add-btn,.add-btn{background:#594C40!important;color:#fffaf1!important;border-color:#594C40!important}
+.product-card .add-btn:hover,.add-btn:hover{background:#75614D!important}
+.preorder-feature{background:linear-gradient(135deg,#F7F2E8,#E3D9CA)!important;color:#594C40!important;border-color:#CEA165!important}
+.preorder-brand,.preorder-feature h2{color:#594C40!important}
+.preorder-feature h2 em,.preorder-divider,.preorder-kicker{color:#A77B43!important}
+.preorder-feature>p,.preorder-feature small{color:#75695C!important}
+.preorder-steps span{background:#F7F2E8!important;color:#594C40!important;border-color:#CFC2AE!important}
+.preorder-steps b{background:#CEA165!important;color:#fffaf1!important}
+.contact{background:#D8C7AF!important;border:1px solid #C6B69E!important}
+.contact h2,.contact p{color:#594C40!important}
+footer{background:#594C40!important;color:#F7F2E8!important;border-top:1px solid #CEA165!important}
+.footer-brand{color:#E4C99F!important}
+.cart-panel{background:#F7F2E8!important;color:#594C40!important}
+.cart-head h3{color:#594C40!important}
+.cart-line{border-color:#CFC2AE!important}
+#checkoutForm input,#checkoutForm select,#checkoutForm textarea{background:#F7F2E8!important;color:#594C40!important;border-color:#CFC2AE!important}
+@media(max-width:760px){
+ .topbar{background:rgba(233,224,211,.98)!important}
+}
