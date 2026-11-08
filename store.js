@@ -1,3 +1,32 @@
+
+// LUNÉRA saved design colors: applied only when settings exist in this browser.
+(function applyLuneraDesignSettings(){
+  try{
+    const s=JSON.parse(localStorage.getItem('luneraDesignSettings')||'null');
+    if(!s)return;
+    const valid=v=>typeof v==='string'&&/^#[0-9a-f]{6}$/i.test(v);
+    const gold=valid(s.buttonColor)?s.buttonColor:'#C7A45D';
+    const blue=valid(s.titleColor)?s.titleColor:'#071A3D';
+    const champagne=valid(s.backgroundColor)?s.backgroundColor:'#F6D7BA';
+    const cards=valid(s.cardColor)?s.cardColor:'#F6D7BA';
+    const css=`
+      body:before{background-color:${champagne}!important}
+      .topbar{background:${blue}!important;border-color:${gold}!important}
+      .brand,.brand small,.crown{color:${gold}!important}
+      .topbar nav a{color:#fff!important}
+      .cart-btn,.gold-btn,.promise-cta,.add-btn{background:${gold}!important;border-color:${gold}!important;color:${blue}!important}
+      .promise,footer{background:${blue}!important;border-color:${gold}!important;color:#fff!important}
+      .promise span,footer p,footer small{color:#fff!important}
+      .category,.product-card,.product-info,.contact,.empty-state{background:${cards}!important;border-color:${gold}!important;color:${blue}!important}
+      .category strong,.category small,.product-info h3,.product-info p,.price,.empty-state,.contact h2,.contact p{color:${blue}!important}
+      .cat-art{background:${cards}!important}
+      .section-head h2{color:${blue}!important}
+      .section-head p{color:${blue}!important}
+      .category:hover{border-color:${gold}!important}
+    `;
+    const style=document.createElement('style');style.id='lunera-user-theme';style.textContent=css;document.head.appendChild(style);
+  }catch(e){/* Ignore invalid or unavailable local settings; keep the original store theme. */}
+})();
 let DEFAULT_WA='';let products=[];let cart=[];const $=s=>document.querySelector(s);const money=n=>Number(n||0).toLocaleString('ar-DZ')+' دج';
 const wilayas=['أدرار','الشلف','الأغواط','أم البواقي','باتنة','بجاية','بسكرة','بشار','البليدة','البويرة','تمنراست','تبسة','تلمسان','تيارت','تيزي وزو','الجزائر','الجلفة','جيجل','سطيف','سعيدة','سكيكدة','سيدي بلعباس','عنابة','قالمة','قسنطينة','المدية','مستغانم','المسيلة','معسكر','ورقلة','وهران','البيض','إليزي','برج بوعريريج','بومرداس','الطارف','تندوف','تيسمسيلت','الوادي','خنشلة','سوق أهراس','تيبازة','ميلة','عين الدفلى','النعامة','عين تموشنت','غرداية','غليزان','تيميمون','برج باجي مختار','أولاد جلال','بني عباس','عين صالح','عين قزام','تقرت','جانت','المغير','المنيعة'];
 wilayas.forEach(w=>$('#customerWilaya').add(new Option(w,w)));$('#year').textContent=new Date().getFullYear();
