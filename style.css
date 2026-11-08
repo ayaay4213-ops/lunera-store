@@ -35,3 +35,22 @@ footer{text-align:center;padding:35px 15px;background:#3b332d;color:#f7f4ef}foot
 .category-banners .category-wide .cat-art img{display:block!important;width:100%!important;height:100%!important;min-height:170px!important;object-fit:cover!important}
 .about-section{grid-template-columns:1fr!important}
 @media(max-width:650px){.category-banners .category-wide{grid-column:auto!important;display:block!important}.category-banners .category-wide .cat-art{min-height:155px!important;aspect-ratio:570/320!important}.category-banners .category-wide .cat-art img{min-height:155px!important}}
+
+
+/* Approved LUNÉRA section order */
+.hero-banner{order:1}
+.coupon-strip{order:2}
+.categories-section{order:3}
+.category-banners{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:15px!important}
+.category-banners>.category{display:block!important;min-width:0}
+.category-banners>.category-wide{grid-column:1/-1!important}
+.category-banners>.category .cat-art{width:100%;aspect-ratio:570/320;height:auto;min-height:0}
+.category-banners>.category .cat-art img{width:100%;height:100%;min-height:0;object-fit:cover}
+@media(max-width:650px){
+ .coupon-strip{grid-template-columns:1fr 1fr!important}
+ .coupon-intro{grid-column:1/-1!important}
+ .category-banners{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ .category-banners>.category-wide{grid-column:1/-1!important}
+ .category-banners>.category .cat-art{aspect-ratio:1/1.08;min-height:0}
+ .category-banners>.category-wide .cat-art{aspect-ratio:2.05/1;min-height:0}
+}
