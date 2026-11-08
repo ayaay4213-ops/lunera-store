@@ -60,3 +60,39 @@ footer{text-align:center;padding:35px 15px;background:#3b332d;color:#f7f4ef}foot
 .product-card{min-width:0;overflow:hidden}
 .product-card>img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;object-position:center;background:#fffdf9;padding:12px}
 @media(max-width:650px){.product-card>img{aspect-ratio:1/1; padding:8px}}
+
+
+/* FINAL IMAGE FIX: never crop product photos or the school-supplies banner */
+.product-card>img{
+  display:block!important;
+  width:100%!important;
+  height:260px!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  padding:12px!important;
+  background:#fffdf9!important;
+}
+.category-banners>.category-wide .cat-art{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:auto!important;
+  background:transparent!important;
+}
+.category-banners>.category-wide .cat-art img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+@media(max-width:650px){
+  .product-card>img{height:190px!important;padding:8px!important}
+  .category-banners>.category-wide .cat-art{height:auto!important;min-height:0!important;aspect-ratio:auto!important}
+  .category-banners>.category-wide .cat-art img{height:auto!important;min-height:0!important;object-fit:contain!important}
+}
