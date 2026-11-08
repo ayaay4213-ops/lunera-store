@@ -410,3 +410,65 @@ footer small{color:#827565!important}
  #categories .category-grid .category-wide .cat-art{height:180px!important}
  #home .hero>img{height:auto!important;max-height:none!important;object-fit:contain!important}
 }
+
+
+/* LUNÉRA final light champagne palette — match the calm hero-led identity */
+:root{
+ --lunera-ink:#3b332d!important;
+ --lunera-navy:#3b332d!important;
+ --lunera-gold:#b89a6a!important;
+ --lunera-gold-soft:#e4d2b6!important;
+ --lunera-cream:#f7f4ef!important;
+ --lunera-card:#fffdf9!important;
+ --lunera-muted:#827465!important;
+ --ivory:#f7f4ef!important;
+ --cream:#f3ede4!important;
+ --champagne:#ead9c6!important;
+ --sand:#d9c4ac!important;
+ --gold:#b89a6a!important;
+ --gold-light:#e4d2b6!important;
+ --ink:#3b332d!important;
+ --muted:#827465!important;
+ --line:#e6dbce!important;
+ --white:#fffdf9!important;
+}
+html,body{background:#f7f4ef!important;color:#3b332d!important}
+body:before{display:none!important;background:none!important;filter:none!important;opacity:1!important}
+.topbar{background:rgba(247,244,239,.97)!important;color:#3b332d!important;border-bottom:1px solid #e6dbce!important;box-shadow:0 4px 18px rgba(70,52,32,.05)!important}
+.brand,.brand small,nav a{color:#3b332d!important}
+.brand small{color:#827465!important}
+.crown,.eyebrow{color:#a78958!important}
+nav a:hover{color:#a78958!important}
+.cart-btn{background:#ead9c6!important;color:#3b332d!important;border:1px solid #b89a6a!important}
+.cart-btn b{background:#b89a6a!important;color:#fffdf9!important}
+.hero{background:#f3ede4!important}
+#home .hero>img{width:100%!important;height:auto!important;max-height:620px!important;object-fit:contain!important;object-position:center!important;background:#f3ede4!important}
+.promise{background:#ead9c6!important;color:#514638!important;border-color:#d9c4ac!important}
+.promise-cta,.gold-btn{background:#b89a6a!important;color:#fffdf9!important;border-color:#b89a6a!important}
+.section,.section:nth-of-type(even){background:#f7f4ef!important}
+.section-head h2,.section-head p,.category strong,.product-info h3,.contact h2{color:#3b332d!important}
+.section-head p,.category small,.product-info p{color:#827465!important}
+.category,.product-card{background:#fffdf9!important;color:#3b332d!important;border:1px solid #e6dbce!important;box-shadow:0 8px 24px rgba(70,52,32,.055)!important}
+.cat-art,.cat-art img,.product-card>img{background:#f3ede4!important}
+.product-card .add-btn,.add-btn{background:#b89a6a!important;color:#fffdf9!important;border-color:#b89a6a!important}
+.price{color:#927448!important}
+.preorder-feature{background:linear-gradient(135deg,#fffdf9,#f3ede4)!important;color:#3b332d!important;border-color:rgba(184,154,106,.55)!important}
+.preorder-brand,.preorder-feature h2{color:#3b332d!important}
+.preorder-feature h2 em,.preorder-divider{color:#a78958!important}
+.preorder-kicker,.preorder-feature>p,.preorder-feature small{color:#827465!important}
+.preorder-steps span{background:#fffdf9!important;color:#3b332d!important;border-color:#e6dbce!important}
+.preorder-steps b{background:#b89a6a!important;color:#fffdf9!important}
+.contact{background:#ead9c6!important;border:1px solid #d9c4ac!important;box-shadow:none!important}
+.contact p{color:#65594d!important}
+footer{background:#3b332d!important;color:#f7f4ef!important;border-top:1px solid #b89a6a!important}
+.footer-brand{color:#e4d2b6!important}
+.cart-panel{background:#fffdf9!important;color:#3b332d!important}
+.cart-head h3{color:#3b332d!important}
+.cart-line{border-color:#e6dbce!important}
+#checkoutForm input,#checkoutForm select,#checkoutForm textarea{background:#fffdf9!important;color:#3b332d!important;border-color:#e6dbce!important}
+.full{background:#b89a6a!important;color:#fffdf9!important}
+@media(max-width:760px){
+ .topbar{background:rgba(247,244,239,.98)!important}
+ .category-grid,.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #home .hero>img{max-height:none!important;object-fit:contain!important}
+}
