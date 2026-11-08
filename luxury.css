@@ -530,3 +530,50 @@ footer{background:#594C40!important;color:#F7F2E8!important;border-top:1px solid
 @media(max-width:760px){
  .topbar{background:rgba(233,224,211,.98)!important}
 }
+
+
+/* LUNÉRA: reduce category artwork so every category title remains visible */
+#categories .category-grid .cat-art{
+ height:140px!important;
+ min-height:0!important;
+ aspect-ratio:auto!important;
+ overflow:hidden!important;
+}
+#categories .category-grid .cat-art img{
+ display:block!important;
+ width:100%!important;
+ height:100%!important;
+ max-height:100%!important;
+ object-fit:contain!important;
+ object-position:center!important;
+ padding:5px!important;
+}
+#categories .category-grid>.category{
+ height:auto!important;
+ min-height:0!important;
+ padding:8px!important;
+ overflow:visible!important;
+}
+#categories .category-grid>.category strong{
+ display:block!important;
+ visibility:visible!important;
+ opacity:1!important;
+ height:auto!important;
+ min-height:0!important;
+ margin:5px 0 0!important;
+ padding:4px 2px!important;
+ line-height:1.45!important;
+ white-space:normal!important;
+}
+#categories .category-grid .category-wide .cat-art{height:125px!important}
+@media(max-width:760px){
+ #categories .category-grid .cat-art{height:112px!important}
+ #categories .category-grid .category-wide .cat-art{height:105px!important}
+ #categories .category-grid>.category{padding:6px!important}
+ #categories .category-grid>.category strong{
+  font-size:11px!important;
+  margin-top:3px!important;
+  padding:3px 1px!important;
+ }
+ #categories .category-grid .cat-art img{padding:3px!important}
+}
