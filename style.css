@@ -5,3 +5,42 @@
 
 .promise-cta{display:inline-flex;align-items:center;justify-content:center;padding:5px 13px;border-radius:22px;background:linear-gradient(120deg,#f2dfb8,#c49a54);border:1px solid #f4dfb5;color:#211b12!important;text-decoration:none;font-weight:800;font-size:11px;line-height:1.4;box-shadow:0 2px 10px #0005;white-space:nowrap}
 .promise-cta:active{transform:scale(.97)}
+
+
+/* LUNÉRA visual refresh — champagne, ivory and soft gold */
+:root{--cream:#f7f4ef;--gold:#b89a6a;--gold2:#e4d2b6;--ink:#3b332d;--pale:#f6d7ba}
+html{background:#f7f4ef}
+body{color:#3b332d}
+body:before{background-image:linear-gradient(180deg,rgba(247,244,239,.72),rgba(247,244,239,.84)),url('background.jpg.png');opacity:1;filter:blur(2px)}
+.topbar{background:rgba(247,244,239,.96);color:#3b332d;border-bottom:1px solid #d8c5a8;box-shadow:0 4px 18px #3b332d0b}
+.brand{color:#3b332d}.brand small{color:#8c7657}.crown{color:#b89a6a}
+nav a{color:#51463b}nav a:hover{color:#a7834d}
+.cart-btn{background:#b89a6a;color:#fff;border-color:#b89a6a}.cart-btn b{background:#fff;color:#6d5738}
+.hero{min-height:430px;background:#eee4d8}
+.hero>img{width:100%;height:430px;object-fit:cover;object-position:center}
+.hero-shade{background:linear-gradient(270deg,rgba(35,29,23,.58),rgba(35,29,23,.16) 64%,rgba(35,29,23,0))}
+.hero-copy{max-width:470px;padding:28px 32px;color:#fff;text-shadow:0 2px 14px #20170f66}
+.hero h1{font-size:clamp(28px,4vw,48px)}.hero h1 em{color:#f2d9b7;font-size:clamp(34px,4.5vw,54px)}
+.hero p{font-size:15px;line-height:2;max-width:420px}
+.eyebrow{color:#b89a6a}
+.gold-btn{background:linear-gradient(120deg,#ead9bf,#b89a6a);border-color:#d5bc94;color:#342b20;box-shadow:0 5px 20px #7c684022}
+.promise{background:#f0e8dd;color:#5c4d3d;border-bottom:1px solid #dfd0bb;font-size:12px;padding:14px 8px}
+.section{padding:66px 4%}
+.section-head h2,.contact h2{color:#3b332d}
+.section-head p{color:#887762}
+.category{background:rgba(255,253,249,.94);color:#3b332d;border:1px solid #e4d8c8;box-shadow:0 8px 24px #4a39200a}
+.category:hover{box-shadow:0 12px 26px #4a392018}
+.cat-art{background:#eee6dc}
+.category small{color:#887762}
+.empty-state{border-color:#d8c5a8;color:#75634d;background:rgba(255,253,249,.9)}
+.contact{background:linear-gradient(120deg,#f0e4d5,#e6d2bb);color:#3b332d;border:1px solid #ddc9ad}
+.contact h2{color:#3b332d}.contact p{color:#6e5b48}
+footer{background:#3b332d;color:#f7f4ef}
+.footer-brand{color:#e4d2b6}
+.how-to-order{max-width:1450px;margin:12px auto 35px;padding:48px 5%;display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center;background:linear-gradient(125deg,#f8f3eb,#f2e3d2);border:1px solid #e1cfb7;border-radius:24px}
+.how-to-order h2{font-size:clamp(24px,3vw,34px);color:#3b332d;margin:8px 0 12px}
+.how-to-order p{font-size:14px;line-height:2.1;color:#6c5a48;margin:0 0 20px}
+.order-steps{display:grid;gap:12px}
+.order-steps>div{display:flex;align-items:center;gap:16px;padding:17px 18px;background:#fffaf3;border:1px solid #e5d7c4;border-radius:15px;color:#4c4033}
+.order-steps b{font:700 18px 'Playfair Display',serif;color:#b89a6a}
+@media(max-width:760px){.hero{min-height:350px}.hero>img{height:350px;object-fit:cover}.hero-copy{right:4%;max-width:82%;padding:14px 12px}.hero h1{font-size:26px}.hero h1 em{font-size:32px}.hero p{font-size:12px;line-height:1.8}.promise{font-size:9px;gap:12px}.how-to-order{margin:8px 3% 25px;padding:28px 5%;grid-template-columns:1fr;gap:18px}.order-steps>div{padding:13px}}
