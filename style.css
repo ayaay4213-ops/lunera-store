@@ -96,3 +96,40 @@ footer{text-align:center;padding:35px 15px;background:#3b332d;color:#f7f4ef}foot
   .category-banners>.category-wide .cat-art{height:auto!important;min-height:0!important;aspect-ratio:auto!important}
   .category-banners>.category-wide .cat-art img{height:auto!important;min-height:0!important;object-fit:contain!important}
 }
+
+
+/* LUNÉRA warm champagne refinement — subtly deeper, still light */
+:root{
+ --ivory:#F0EBE3;
+ --cream:#EAE0D4;
+ --champagne:#E3D0BA;
+ --sand:#D1B99F;
+ --gold:#AE8E60;
+ --gold-light:#D8C1A0;
+ --ink:#3B332D;
+ --muted:#786A5B;
+ --line:#D9CABC;
+ --white:#FBF8F3;
+}
+html,body{background:#F0EBE3;color:#3B332D}
+.topbar{background:rgba(240,235,227,.97);border-color:#D9CABC}
+.hero-banner{background:#E7D9C8}
+.hero-banner>img{width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center 38%}
+.coupon-strip{background:#E8DED1;border-color:#D9CABC}
+.coupon-card{background:#F8F4EE;border-color:#CBB493}
+.section{background:#F0EBE3}
+.category-banners{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.category-banners>[data-category="الإكسسوارات"]{order:1}
+.category-banners>[data-category="الجمال والعناية"]{order:2}
+.category-banners>[data-category="الهدايا"]{order:3}
+.category-banners>[data-category="الحقائب"]{order:4}
+.category-banners>[data-category="الأدوات المدرسية"]{order:5;grid-column:1/-1!important}
+.category-banners .cat-art{background:#E9E0D5}
+.category-banners .category-wide .cat-art{background:transparent}
+.contact{background:#E3D3C0;border-color:#D1B99F}
+.how-to-order{background:#EAE0D4;border-color:#D9CABC}
+@media(max-width:650px){
+ .hero-banner>img{max-height:none;object-fit:cover;object-position:center 38%}
+ .category-banners{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .category-banners>.category-wide{grid-column:1/-1!important}
+}
