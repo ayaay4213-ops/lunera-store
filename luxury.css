@@ -606,3 +606,13 @@ html,body,
 .topbar{
  background:rgba(235,232,227,.97)!important;
 }
+
+
+/* LUNÉRA — darker warm-grey background preview */
+html,body,
+.section,.section:nth-of-type(even){
+ background:#B8B5B0!important;
+}
+.topbar{
+ background:rgba(184,181,176,.97)!important;
+}
